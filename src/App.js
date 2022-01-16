@@ -35,12 +35,12 @@ function App() {
         link="https://www.reddit.com/r/sysadmin/comments/reqc6f/log4j_0day_being_exploited_mega_thread_overview/"
         img1={image}
         img2={image2}
-        solutionContent2="Verifying NC connection;"
+        solutionContent2=" Verifying NC connection;"
         img3={image3}
-        solutionContent3="Serving the file to my IP address;"
+        solutionContent3=" Serving the file to my IP address;"
         img4={image4}
-        solutionContent4="Trigger the exploit and fire off our JNDI syntax "
-        solutionContent5="Foothold Compiling java code Setting up http server and seeing confirmation that the exploit was uploaded"
+
+        solutionContent5=" Trigger the exploit and fire off our JNDI syntax; Foothold Compiling java code Setting up http server and seeing confirmation that the exploit was uploaded"
 
         img6={image6}
 

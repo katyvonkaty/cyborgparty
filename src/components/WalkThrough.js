@@ -7,7 +7,6 @@ const WalkThrough = (props) => {
       <Container centered style={{ marginTop: "100px" }}>
         <Grid centered>
           <Grid.Column centered width={8}>
-
             <h3> {props.projectHeader} </h3>
             <Label as="a" color="teal" tag>
               Hot & New
@@ -16,26 +15,35 @@ const WalkThrough = (props) => {
             <p> {props.login} </p>
             <br />
             <p>
-            <Header as='h3' block>
-               {props.problemContent}
+              <Header as="h3" block>
+                {props.problemContent}
               </Header>
-              <p> More info here :<a href={props.link}> here </a> </p>
-
+              <p>
+                {" "}
+                More info here :<a href={props.link}> here </a>{" "}
+              </p>
             </p>
             <p> {props.solution} </p>
-            <p><Icon name='check' size='small' /> {props.problemContent1} </p>
+            <p>
+              <Icon name="check" size="small" /> {props.problemContent1}{" "}
+            </p>
             <br />
-            <p><Icon name='check' size='small' /> {props.problemContent2} </p>
+            <p>
+              <Icon name="check" size="small" /> {props.problemContent2}{" "}
+            </p>
             <br />
 
-            <p>               <Icon name='check' size='small' />
- {props.problemContent3} </p>
+            <p>
+              {" "}
+              <Icon name="check" size="small" />
+              {props.problemContent3}{" "}
+            </p>
 
             <br />
             <p>
               {" "}
-
-              <b> {props.solutionContent1} </b>{" "}
+              <Label circular color={"teal"}> 1 </Label>
+ <b> {props.solutionContent1} </b>{" "}
             </p>
             <img style={{ width: "100%" }} src={props.img1} />
 
@@ -50,8 +58,9 @@ const WalkThrough = (props) => {
               src={props.img2}
             />
             <br />
-
-            <p> {props.solutionContent2} </p>
+<br />
+            <p> <b>              <Label circular color={"teal"}> 2 </Label>
+{props.solutionContent2} </b> </p>
             <Image
               label={{
                 as: "a",
@@ -63,8 +72,8 @@ const WalkThrough = (props) => {
               src={props.img3}
             />
 
-            <br />
-            <p>
+            <br /> <br />
+            <p>             <Label circular color={"teal"}> 3 </Label>
  {props.solutionContent3} </p>
             <Image
               label={{
@@ -82,32 +91,38 @@ const WalkThrough = (props) => {
 
             <br />
 
-            <p> {props.solutionContent5} </p>
-            <Image label={{
-              as: "a",
-              color: "Orange",
-              content: "Foothold Alert",
-              ribbon: true,
-            }}style={{ width: "100%" }} src={props.img6} />
+            <p> <Label circular color={"teal"}> 4 </Label> {props.solutionContent5} </p>
+            <Image
+              label={{
+                as: "a",
+                color: "Orange",
+                content: "Foothold Alert",
+                ribbon: true,
+              }}
+              style={{ width: "100%" }}
+              src={props.img6}
+            />
 
             <br />
 
             <p> {props.solutionContent6} </p>
-             <Image
-                label={{
-                  as: "a",
-                  color: "teal",
-                  content: "Serving the file to my IP address",
-                  ribbon: true,
-                }} style={{ width: "100%" }} src={props.img5} />
+            <Image
+              label={{
+                as: "a",
+                color: "teal",
+                content: "Serving the file to my IP address",
+                ribbon: true,
+              }}
+              style={{ width: "100%" }}
+              src={props.img5}
+            />
 
-            <p> {props.solutionContent7} </p>
+            <p><Label circular color={"teal"}> 5 </Label> {props.solutionContent7} </p> 
             <img style={{ width: "100%" }} src={props.img7} />
             <br />
           </Grid.Column>
         </Grid>
-        <img style={{width:"100%"}}src={props.video} />
-
+        <img style={{ width: "100%" }} src={props.video} />
       </Container>
     </>
   );
