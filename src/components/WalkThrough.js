@@ -19,6 +19,7 @@ const WalkThrough = (props) => {
             <Header as='h3' block>
                {props.problemContent}
               </Header>
+              <p> More info here :<a href={props.link}> here </a> </p>
 
             </p>
             <p> {props.solution} </p>
@@ -82,20 +83,31 @@ const WalkThrough = (props) => {
             <br />
 
             <p> {props.solutionContent5} </p>
-            <Image style={{ width: "100%" }} src={props.img6} />
-            <Label circular color={"red"} key={"red"}>
-              2
-            </Label>
+            <Image label={{
+              as: "a",
+              color: "Orange",
+              content: "Foothold Alert",
+              ribbon: true,
+            }}style={{ width: "100%" }} src={props.img6} />
+
             <br />
 
             <p> {props.solutionContent6} </p>
-            <img style={{ width: "100%" }} src={props.img5} />
+             <Image
+                label={{
+                  as: "a",
+                  color: "teal",
+                  content: "Serving the file to my IP address",
+                  ribbon: true,
+                }} style={{ width: "100%" }} src={props.img5} />
 
             <p> {props.solutionContent7} </p>
             <img style={{ width: "100%" }} src={props.img7} />
             <br />
           </Grid.Column>
         </Grid>
+        <img style={{width:"100%"}}src={props.video} />
+
       </Container>
     </>
   );
