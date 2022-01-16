@@ -40,7 +40,7 @@ function App() {
         solutionContent5="Foothold Compiling java code Setting up http server and seeing confirmation that the exploit was uploaded"
 
         img6={image6}
-    
+
         solutionContent7="  Setting up python 3 server Host the exploit Java file via HTTP"
         img7={image7}
 
