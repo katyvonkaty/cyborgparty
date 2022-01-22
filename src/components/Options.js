@@ -1,9 +1,15 @@
-import React from "react";
+import { Route, Routes, Redirect,Link, HashRouter } from 'react-router-dom';
+
+import React from 'react';
+
+import Log4J from "./Log4J";
+
 import { Button, Icon, Image, Item, Label } from "semantic-ui-react";
 
 const paragraph = <Image src="/images/wireframe/short-paragraph.png" />;
 
 const Options = () => (
+  <HashRouter>
   <Item.Group divided style={{ marginTop: "80px" }}>
     <Item>
       <Item.Image
@@ -16,17 +22,20 @@ const Options = () => (
         <Item.Meta>
           <span className="cinema">
             Visually and verbally solving CTF challenges
+
+
           </span>
         </Item.Meta>
         <Item.Extra>
           <Label>IMAX</Label>
           <Label icon="globe" content="Additional Languages" />
+
         </Item.Extra>
         <Button red primary floated="right">
-          Buy tickets
           <Icon name="right chevron" />
         </Button>
       </Item.Content>
+
     </Item>
     <Item>
       <Item.Image
@@ -35,6 +44,7 @@ const Options = () => (
       />
 
       <Item.Content>
+
         <Item.Header as="a">Walk Throughs</Item.Header>
         <Item.Meta>
           <span className="cinema">
@@ -46,7 +56,10 @@ const Options = () => (
           <Label icon="globe" content="Additional Languages" />
         </Item.Extra>
         <Button red primary floated="right">
-          Buy tickets
+        <Routes>
+          <Route path="/blog" component={Log4J}> Buy Tickets </Route>
+          </Routes>
+
           <Icon name="right chevron" />
         </Button>
       </Item.Content>
@@ -75,6 +88,7 @@ const Options = () => (
       </Item.Content>
     </Item>
   </Item.Group>
+  </HashRouter>
 );
 
 export default Options;
