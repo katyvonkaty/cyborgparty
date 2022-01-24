@@ -26,7 +26,7 @@ export default class MenuDefault extends Component {
         </Menu.Item>
 
         <Menu.Item>
-        <a href="www.google.com">  Github </a>
+        <a href="www.google.com" target="_blank">  Github </a>
         </Menu.Item>
 
         <Menu.Item
