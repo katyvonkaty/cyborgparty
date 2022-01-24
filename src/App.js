@@ -1,31 +1,41 @@
-import { Route, Routes, Redirect, HashRouter } from "react-router-dom";
-import { Container, Divider, Grid, Image, Segment } from "semantic-ui-react";
-import Info from "./components/Info";
-import Tag from "./components/Tag";
+import React, { Component, Fragment } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import MeatPotatoes from "./components/MeatPotatoes";
-import Options from "./components/Options";
+import {
+  Container,
+  Divider,
+  Grid,
+  Image,
+  Segment,
+  Button,
+} from "semantic-ui-react";
+
 import MenuDefault from "./components/Menu";
 import Log4J from "./components/Log4J";
+import Home from "./components/Home";
+
+import Blog from "./components/Blog";
+import Options from "./components/Options";
 
 function App() {
   return (
     <div className="App">
-      <MenuDefault />
-      <Container centered style={{ marginTop: "100px" }}>
-        <Grid centered>
-          <Grid.Column centered width={10}>
-            <h1> Hi, I'm Katie Jordan. </h1>
-            <h3>
-              {" "}
-              I'm a Cyber Security Analyst, Web Developer, Professor, Pastry
-              Chef, Illustrator and Retired Product Designer living in New York
-              City.{" "}
-            </h3>
-            <Options />
-          </Grid.Column>
-        </Grid>
-      </Container>
+      <Router>
+        <MenuDefault />
+        <Container centered style={{ marginTop: "100px" }}>
+          <Grid centered>
+            <Grid.Column centered width={10}>
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route  path="/log4j" element={<Log4J />} />
+                <Route  path="/blog" element={<Blog />} />
+              </Routes>
+              <Options />
+
+            </Grid.Column>
+          </Grid>
+        </Container>
+      </Router>
     </div>
   );
 }

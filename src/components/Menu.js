@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import logo from "../images/logo.png";
-import { Link , BrowserRouter} from "react-router-dom";
+import Home from "./Home"
 
 export default class MenuDefault extends Component {
   state = {}
@@ -12,15 +12,16 @@ export default class MenuDefault extends Component {
     const { activeItem } = this.state
 
     return (
-      <BrowserRouter>
       <Menu fluid widths={4}>
         <Menu.Item
           name='editorials'
           active={activeItem === 'editorials'}
           onClick={this.handleItemClick}
-
+          component={Home}
+          href="/"
+          to="/" 
         >
-       <img src={logo} />
+       <img src={logo}/>
         </Menu.Item>
 
         <Menu.Item
@@ -36,9 +37,7 @@ export default class MenuDefault extends Component {
           active={activeItem === 'reviews'}
           onClick={this.handleItemClick}
         >
-        <a href="www.google.com" target="_blank">
           Linkedin
-          </a>
         </Menu.Item>
 
         <Menu.Item
@@ -49,7 +48,6 @@ export default class MenuDefault extends Component {
 Resume
 </Menu.Item>
       </Menu>
-      </BrowserRouter>
     )
   }
 }
