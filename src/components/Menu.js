@@ -26,7 +26,7 @@ export default class MenuDefault extends Component {
         </Menu.Item>
 
         <Menu.Item>
-        <a href="www.google.com" target="_blank">  Github </a>
+          <a href="https://github.com/katyvonkaty" target="_blank" rel="noreferrer">  Github </a>
         </Menu.Item>
 
         <Menu.Item
@@ -34,7 +34,7 @@ export default class MenuDefault extends Component {
           active={activeItem === 'reviews'}
           onClick={this.handleItemClick}
         >
-          Linkedin
+          <a href="https://www.linkedin.com/in/katie-jordan-designer/" rel="noreferrer"> Linkedin </a>
         </Menu.Item>
 
         <Menu.Item
