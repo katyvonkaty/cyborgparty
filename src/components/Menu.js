@@ -12,6 +12,7 @@ export default class MenuDefault extends Component {
     const { activeItem } = this.state
 
     return (
+      <BrowserRouter>
       <Menu fluid widths={4}>
         <Menu.Item
           name='editorials'
@@ -29,12 +30,15 @@ export default class MenuDefault extends Component {
         >
         <a href="www.google.com">  Github </a>
         </Menu.Item>
+
         <Menu.Item
           name='reviews'
           active={activeItem === 'reviews'}
           onClick={this.handleItemClick}
         >
+        <a href="www.google.com" target="_blank">
           Linkedin
+          </a>
         </Menu.Item>
 
         <Menu.Item
@@ -45,6 +49,7 @@ export default class MenuDefault extends Component {
 Resume
 </Menu.Item>
       </Menu>
+      </BrowserRouter>
     )
   }
 }
