@@ -3,6 +3,7 @@ import { Menu } from 'semantic-ui-react'
 import logo from "../images/logo.png";
 import Home from "./Home"
 
+
 export default class MenuDefault extends Component {
   state = {}
 
@@ -19,16 +20,12 @@ export default class MenuDefault extends Component {
           onClick={this.handleItemClick}
           component={Home}
           href="/"
-          to="/" 
+          to="/"
         >
        <img src={logo}/>
         </Menu.Item>
 
-        <Menu.Item
-          name='reviews'
-          active={activeItem === 'reviews'}
-          onClick={this.handleItemClick}
-        >
+        <Menu.Item>
         <a href="www.google.com">  Github </a>
         </Menu.Item>
 
