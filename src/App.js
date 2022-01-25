@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <Router>
         <MenuDefault />
-        <Container centered style={{ marginTop: "100px" }}>
+        <Container centered style={{ marginTop: "50px" }}>
           <Grid centered>
             <Grid.Column centered width={10}>
               <Routes>

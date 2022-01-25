@@ -25,7 +25,10 @@ export default class MenuDefault extends Component {
        <img src={logo}/>
         </Menu.Item>
 
-        <Menu.Item>
+        <Menu.Item
+        name='reviews'
+        active={activeItem === 'reviews'}
+        onClick={this.handleItemClick}>
           <a href="https://github.com/katyvonkaty" target="_blank">  Github </a>
         </Menu.Item>
 

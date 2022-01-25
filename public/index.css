@@ -23,11 +23,18 @@ code {
   boz-sizing: border-box;
 }
 
+a {
+  color: teal !important;
+}
+
+a:hover {
+  background-color: #eee;
+}
+
 p {
   text-align: center;
 font-size: 14px;
 margin-bottom: 50px;
-margin-top: -13px;
 }
 
 h1 {
@@ -39,52 +46,16 @@ img {
   margin:0 auto;
   display:block;
 }
-body {
-  background-color: #f1e6f7;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content: flex-start;
-  height:100vh;
-  margin:0;
+
+
+button a {
+  color:white !important;
 }
 
-.right {
-  padding:20px;
-  /* border:1px solid #eee; */
-  margin:20px;
+.ui.teal.button, .ui.teal.buttons .button {
+  color:white !important;
 }
 
-
-.draggable-list {
-  /* display: flex;
-      flex-wrap: wrap; */
-      /* flex-direction: row-reverse; */
-}
-
-
-.draggable-list li:not(:last-of-type) {
-    margin-left: 10px !important;
-    margin-top: 30px !important;
-    margin: 0 auto !important;
-    display: block !important;
-    /* background-color: #FFFCFF; */
-    border-radius: 10px;
-  }
-
-.draggable-list li {
-  /* background-color: white; */
-  margin-left: 10px !important;
-  margin-top: 30px !important;
-  margin: 0 auto !important;
-  display: block !important;
-}
-
-.draggable-list li:not(:last-of-type){
-  /* background-color: #FFFCFF; */
-border-radius: 10px;
-  /* border-bottom: 1px solid var(--border-color) */
-}
 
 .draggable-list .number {
   background-color: var(--background-color);
@@ -131,36 +102,4 @@ h2 {
 p {
   text-align:center;
   font-size:14px;
-}
-.draggable-list li.wrong .person-name {
-  color: #ff3838
-}
-
-.draggable {
-  cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
-  padding:10px;
-  flex:1;
-  border-radius:10px;
-  margin-bottom:10px;
-  background-color:white;
-      border: 2px solid #eee;
-}
-
-.check-btn {
-  background-color: var(--background-color);
-  border:none;
-  color: var(--text-color);
-  font-size:16px;
-  padding:10px 20px;
-  cursor: pointer;
-}
-
-.check-btn:active {
-  transform: scale(0.98)
-}
-
-.check-btn:focus{
-  outline: none;
 }

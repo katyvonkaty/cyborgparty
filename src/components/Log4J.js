@@ -19,7 +19,7 @@ import prescence from "../images/prescence_inlogs.png";
 
 function Log4J() {
   return(
-  <Container centered style={{ marginTop: "100px" }}>
+  <Container centered style={{ marginTop: "20px" }}>
     <Grid centered>
       <Grid.Column centered>
         <Tag CVEscore="CVE-2021-44228" label="Hot and New" />
