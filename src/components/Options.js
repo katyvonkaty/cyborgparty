@@ -9,7 +9,7 @@ const Options = (props) => {
     <Item.Group divided style={{ marginTop: "80px" }}>
       <Item>
         <Item.Image
-          src="https://cdn.dribbble.com/users/2064103/screenshots/17133458/media/4ee80379f310c49b4d5759cc8bbbd5c8.jpg?compress=1&resize=1200x900&vertical=top"
+          src="https://cyberport-katiejordan.vercel.app/static/media/portscan.82a51357d70e1f018581.png"
           rounded
         />
         <Item.Content>
@@ -39,7 +39,7 @@ const Options = (props) => {
 
       <Item>
         <Item.Image
-          src="https://cdn.dribbble.com/users/2064103/screenshots/17133458/media/4ee80379f310c49b4d5759cc8bbbd5c8.jpg?compress=1&resize=1200x900&vertical=top"
+          src="https://katiejordan.vercel.app/static/media/star.b6b0d419.png"
           rounded
         />
         <Item.Content>
@@ -69,7 +69,7 @@ const Options = (props) => {
 
       <Item>
         <Item.Image
-          src="https://cdn.dribbble.com/users/2064103/screenshots/17133458/media/4ee80379f310c49b4d5759cc8bbbd5c8.jpg?compress=1&resize=1200x900&vertical=top"
+          src="https://cdn.dribbble.com/users/2064103/screenshots/15021684/media/edfeb5c787a14abaa73064f59a406b72.png?compress=1&resize=1600x1200&vertical=top"
           rounded
         />
         <Item.Content>
