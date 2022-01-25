@@ -26,7 +26,7 @@ export default class MenuDefault extends Component {
         </Menu.Item>
 
         <Menu.Item>
-          <a href="https://github.com/katyvonkaty" target="_blank" rel="noreferrer">  Github </a>
+          <a href="https://github.com/katyvonkaty" target="_blank">  Github </a>
         </Menu.Item>
 
         <Menu.Item
@@ -34,7 +34,7 @@ export default class MenuDefault extends Component {
           active={activeItem === 'reviews'}
           onClick={this.handleItemClick}
         >
-          <a href="https://www.linkedin.com/in/katie-jordan-designer/" rel="noreferrer"> Linkedin </a>
+          <a href="https://www.linkedin.com/in/katie-jordan-designer/"> Linkedin </a>
         </Menu.Item>
 
         <Menu.Item
@@ -42,8 +42,8 @@ export default class MenuDefault extends Component {
           active={activeItem === 'upcomingEvents'}
           onClick={this.handleItemClick}
         >
-Resume
-</Menu.Item>
+        Resume
+        </Menu.Item>
       </Menu>
     )
   }

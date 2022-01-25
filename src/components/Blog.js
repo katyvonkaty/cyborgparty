@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Blog = () => {
+function Blog() {
 return(
   <>
   <h1> Hi! </h1>

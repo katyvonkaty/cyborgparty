@@ -23,6 +23,7 @@ const Options = (props) => {
             <Label>IMAX</Label>
             <Label icon="globe" content="Additional Languages" />
           </Item.Extra>
+
           <Button
             component={Log4J}
             href="/Log4J"
@@ -31,8 +32,9 @@ const Options = (props) => {
             primary
             floated="right"
           >
-            <Icon name="right chevron" />
             Click me
+            <Icon name="right chevron" />
+
           </Button>
         </Item.Content>
       </Item>
@@ -61,8 +63,9 @@ const Options = (props) => {
             primary
             floated="right"
           >
-            <Icon name="right chevron" />
             Click me
+            <Icon name="right chevron" />
+
           </Button>
         </Item.Content>
       </Item>
@@ -91,12 +94,14 @@ const Options = (props) => {
             primary
             floated="right"
           >
-            <Icon name="right chevron" />
             Click me
+            <Icon name="right chevron" />
+
           </Button>
         </Item.Content>
       </Item>
     </Item.Group>
+
   );
 };
 
