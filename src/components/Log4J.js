@@ -19,7 +19,7 @@ import prescence from "../images/prescence_inlogs.png";
 
 function Log4J() {
   return(
-  <Container centered style={{ marginTop: "20px" }}>
+  <Container class="testing" centered style={{ marginTop: "20px" }}>
     <Grid centered>
       <Grid.Column centered>
         <Tag CVEscore="CVE-2021-44228" label="Hot and New" />
@@ -38,42 +38,48 @@ function Log4J() {
           number="2"
           solutionStep="Compile and execute the marshal sec utility & starting LDAP server"
           solutionImage={marshal}
-          moreInfo="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          moreInfo="With the marshalsec utility built, we can start an LDAP referral server to direct connections to our secondary HTTP server (which we will prepare in just a moment)."
         />
         <MeatPotatoes
           number="3"
           solutionStep="Create java payload (no experience necessary!)"
+          moreInfo="For this payload, you can see we will execute a command on the target, specifically nc -e /bin/bash to call back to our our attacker machine"
+
           solutionImage={java}
         />
         <MeatPotatoes
           number="4"
           solutionStep="Serve exploit on HTTP server"
           solutionImage={exploit}
-          moreInfo="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          moreInfo="Your payload is created and compiled, it is hosted with an HTTP server in one terminal, your LDAP referral server is up and waiting in another terminal -- next prepare a netcat listener to catch your reverse shell in yet another new terminal window."
         />
         <MeatPotatoes
           number="5"
           solutionStep="Prepare netcat listener"
           solutionImage={nc}
-          moreInfo="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          moreInfo="Nuff said."
         />
         <MeatPotatoes
           number="6"
           solutionStep="Trigger the exploit and fire the JNDI syntax"
           solutionImage={curling}
-          moreInfo="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          moreInfo="You have now received initial access and command-and-control on a vanilla, freshly installed Apache Solr instance. This is just one example of many, many vulnerable applications affected by this log4j vulnerability."
         />
         <MeatPotatoes
           number="7"
           solutionStep="I have gained"
           solutionImage={foothold}
-          moreInfo="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          moreInfo="Now that you have gained a reverse shell connection on the victim machine, you can continue to take any action you might like."
         />
         <MeatPotatoes
           number="8"
           solutionStep="Here you can see my activity in the log file!"
           solutionImage={prescence}
-          moreInfo="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          moreInfo="Running amok in the logs."
+        />
+        <MeatPotatoes
+          number="9"
+          solutionStep="Proof of concept"
         />
         <Foothold foothold={test} />
       </Grid.Column>

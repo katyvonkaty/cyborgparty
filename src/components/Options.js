@@ -156,7 +156,8 @@ ADD            </span>
           <Button
             component={Blog}
             href="https://tickertok.vercel.app/"
-target="_blank"            color="teal"
+          target="_blank"
+          color="teal"
             floated="right"
           >
           View Project

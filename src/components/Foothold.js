@@ -4,7 +4,7 @@ import { Label } from "semantic-ui-react";
 const Foothold = (props) => {
   return (
     <>
-    <img src= {props.foothold} style={{width:"70%"}} />
+    <img src= {props.foothold} style={{width:"100%"}} />
 
     </>
   )
