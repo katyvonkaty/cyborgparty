@@ -45,7 +45,8 @@ export default class MenuDefault extends Component {
           active={activeItem === 'upcomingEvents'}
           onClick={this.handleItemClick}
         >
-        Resume
+        <a href = "mailto: kj0203@gmail.com.com">Contact Me</a>
+
         </Menu.Item>
       </Menu>
     )

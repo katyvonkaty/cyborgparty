@@ -55,6 +55,8 @@ Stepping through the methodologies of gaining root on an application by explotin
           </Item.Meta>
           <Item.Extra>
             <Label>React</Label>
+            <Label>Passive Recon</Label>
+
             <Label>Networking</Label>
             <Label>DNS</Label>
           </Item.Extra>
@@ -106,36 +108,6 @@ Stepping through the methodologies of gaining root on an application by explotin
         </Item.Content>
       </Item>
 
-      <Item>
-        <Item.Image
-          src="https://cdn.dribbble.com/users/2064103/screenshots/15021684/media/edfeb5c787a14abaa73064f59a406b72.png?compress=1&resize=1600x1200&vertical=top"
-          rounded
-        />
-        <Item.Content>
-          <Item.Header as="a">CTF -- ADD </Item.Header>
-          <Item.Meta>
-            <span className="cinema">
-ADD            </span>
-          </Item.Meta>
-          <Item.Extra>
-          <Label>Linux</Label>
-          <Label>NMAP</Label>
-          <Label>Wireshark</Label>
-          <Label>Packet Analysis</Label>
-          </Item.Extra>
-          <Button
-            component={Blog}
-            href="/Blog"
-            to="/Blog"
-            color="teal"
-            floated="right"
-          >
-          View Project
-            <Icon name="right chevron" />
-
-          </Button>
-        </Item.Content>
-      </Item>
 
       <Item>
         <Item.Image
@@ -150,8 +122,11 @@ ADD            </span>
             </span>
           </Item.Meta>
           <Item.Extra>
-            <Label>IMAX</Label>
-            <Label icon="globe" content="Additional Languages" />
+          <Label>React</Label>
+          <Label>JavaScript</Label>
+
+          <Label> Data </Label>
+          <Label> API </Label>
           </Item.Extra>
           <Button
             component={Blog}
