@@ -19,7 +19,9 @@ function Evernote() {
   <Container class="testing" centered style={{ marginTop: "20px" }}>
     <Grid centered>
       <Grid.Column centered>
-        <Opener opener="Script Kiddie vs Iraq"  />
+      <Tag CVEscore="All's Fair in Cyberwarfare" label="Script Kiddies" />
+
+        <h1> Script Kiddie vs Iraq </h1>
         <MeatPotatoes
           number="1"
           solutionStep="Which IP Doesn't Match the Rest?"

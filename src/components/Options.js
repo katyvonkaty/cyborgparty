@@ -24,8 +24,9 @@ Stepping through the methodologies of gaining root on an application by explotin
           <Item.Extra>
             <Label>Linux</Label>
             <Label>NMAP</Label>
+            <Label content="LDAP" />
 
-            <Label icon="globe" content="Java" />
+            <Label content="Java" />
           </Item.Extra>
 
           <Button
@@ -45,20 +46,21 @@ Stepping through the methodologies of gaining root on an application by explotin
 
       <Item>
         <Item.Image
-          src="https://cyberport-katiejordan.vercel.app/static/media/portscan.82a51357d70e1f018581.png"
+          src="https://cyberport-katiejordan.vercel.app/static/media/one.b0d6b6db6149bd77387a.jpg"
           rounded
         />
         <Item.Content>
-          <Item.Header as="a">DNS Reverse Engineering</Item.Header>
+          <Item.Header as="a">NS Lookup</Item.Header>
           <Item.Meta>
             <span className="cinema">
-Stepping through the methodologies of gaining root on an application by exploting the Log4J vulnerability.            </span>
+Reverse engineering a malicous attacker trying to access top secret information from my evernote account.            </span>
           </Item.Meta>
           <Item.Extra>
-            <Label>Linux</Label>
-            <Label>NMAP</Label>
+            <Label>NS Lookup</Label>
+            <Label>Domains</Label>
+            <Label>Passive Recon</Label>
+            <Label>Phishing</Label>
 
-            <Label icon="globe" content="Java" />
           </Item.Extra>
 
           <Button
