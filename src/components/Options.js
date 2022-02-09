@@ -1,5 +1,7 @@
 import React from "react";
 import Log4J from "./Log4J";
+import Evernote from "./Evernote";
+
 import Blog from "./Blog";
 
 import { Button, Icon, Image, Item, Label } from "semantic-ui-react";
@@ -40,6 +42,40 @@ Stepping through the methodologies of gaining root on an application by explotin
           </Button>
         </Item.Content>
       </Item>
+
+      <Item>
+        <Item.Image
+          src="https://cyberport-katiejordan.vercel.app/static/media/portscan.82a51357d70e1f018581.png"
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">DNS Reverse Engineering</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+Stepping through the methodologies of gaining root on an application by exploting the Log4J vulnerability.            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Linux</Label>
+            <Label>NMAP</Label>
+
+            <Label icon="globe" content="Java" />
+          </Item.Extra>
+
+          <Button
+            component={Log4J}
+            href="/Evernote"
+            to="/Evernote"
+            color="teal"
+
+            floated="right"
+          >
+            View Project
+            <Icon name="right chevron" />
+
+          </Button>
+        </Item.Content>
+      </Item>
+
 
       <Item>
         <Item.Image

@@ -10,7 +10,8 @@ const Home = () => {
           <h3 style={{fontWeight:"300"}}>
             {" "}
             I'm a Cyber Security Analyst, Web Developer, Professor, Pastry Chef,
-            Illustrator and Retired Product Designer living in New York City.{" "}
+            Illustrator and Retired Product Designer living in New York City.
+
           </h3>
 
 

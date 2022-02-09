@@ -13,6 +13,8 @@ import {
 import MenuDefault from "./components/Menu";
 import Log4J from "./components/Log4J";
 import Home from "./components/Home";
+import Evernote from "./components/Evernote";
+
 
 import Blog from "./components/Blog";
 import Options from "./components/Options";
@@ -28,6 +30,8 @@ function App() {
               <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route  path="/log4j" element={<Log4J />} />
+                <Route  path="/evernote" element={<Evernote />} />
+
                 <Route  path="/blog" element={<Blog />} />
               </Routes>
               <Options />
