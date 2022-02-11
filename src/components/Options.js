@@ -113,6 +113,41 @@ Reverse engineering a malicous attacker trying to access top secret information 
         </Item.Content>
       </Item>
 
+
+            <Item>
+              <Item.Image
+                src="https://media.istockphoto.com/vectors/roman-citizens-man-and-woman-vector-id1218894295?k=20&m=1218894295&s=612x612&w=0&h=mGKwWPRkqoTIUzskgOfOPGzNOfcKO6T61qC3a4YcESc="
+                rounded
+              />
+              <Item.Content>
+                <Item.Header as="a">Ceasar Cipher</Item.Header>
+                <Item.Meta>
+                  <span className="cinema">
+                    Gaining a better understanding of basic encryption techniques using the ceasar cipher to encrypt and decrypt text.
+                  </span>
+                </Item.Meta>
+                <Item.Extra>
+                  <Label>React</Label>
+                  <Label>JavaScript</Label>
+
+                  <Label> Data </Label>
+                  <Label> API </Label>
+                </Item.Extra>
+                <Button
+                  component={Blog}
+                  href="https://ceasar-fawn.vercel.app/"
+                  target="_blank"
+                  color="teal"
+                  floated="right"
+                >
+                  View Project
+                  <Icon name="right chevron" />
+
+                </Button>
+              </Item.Content>
+            </Item>
+
+
       <Item>
         <Item.Image
           src="https://katiejordan.vercel.app/static/media/star.b6b0d419.png"
