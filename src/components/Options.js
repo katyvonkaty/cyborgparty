@@ -1,10 +1,9 @@
 import React from "react";
 import Log4J from "./Log4J";
-import Evernote from "./Evernote";
 
 import Blog from "./Blog";
 
-import { Button, Icon, Image, Item, Label } from "semantic-ui-react";
+import { Button, Icon, Item, Label } from "semantic-ui-react";
 
 const Options = (props) => {
   return (
@@ -43,6 +42,40 @@ Stepping through the methodologies of gaining root on an application by explotin
           </Button>
         </Item.Content>
       </Item>
+
+      <Item>
+        <Item.Image
+          src="https://i0.wp.com/4.bp.blogspot.com/-clNpcTBtdIs/W9PszzUnxQI/AAAAAAAAa3Q/qtnsNsp9iu8tQqDdO48JNWxxKhCar6xlACLcBGAs/s1600/10.png?ssl=1"
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">SearchSploit</Item.Header>
+          <Item.Meta>
+        Acme Corp has recently set up a new blog. Their developer team have asked for a security audit to be performed before they create and publish articles to the public. It is your task to perform a security audit on the blog; looking for and abusing any vulnerabilities that you find.          </Item.Meta>
+          <Item.Extra>
+            <Label>MSFConsole</Label>
+            <Label>CVE</Label>
+            <Label>Reverse Shell</Label>
+            <Label>SearchSploit</Label>
+
+          </Item.Extra>
+
+          <Button
+            component={Log4J}
+            href="/SearchSploit"
+            to="/SearchSploit"
+            color="teal"
+
+            floated="right"
+          >
+            View Project
+            <Icon name="right chevron" />
+
+          </Button>
+        </Item.Content>
+      </Item>
+
+
 
       <Item>
         <Item.Image
@@ -191,7 +224,7 @@ Reverse engineering a malicous attacker trying to access top secret information 
           <Item.Header as="a">TickerTok</Item.Header>
           <Item.Meta>
             <span className="cinema">
-              Visually and verbally solving CTF challenges
+              The unoffical sister app to TikTok - TikerTok focuses on the stock markets daily ticker. Get it?! Tell me you get it... Stylistically ripped off from Robinhood.
             </span>
           </Item.Meta>
           <Item.Extra>
