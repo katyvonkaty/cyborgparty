@@ -26,7 +26,12 @@ function HoneyPot() {
           solutionImage={honey}
           moreInfo="We used Tpot which is a github package allowing us to view who was trying to get some honey from our sweet, sweet honey pot. We sppun up an EC2 instance purposeply vulnerably, referred to in the biz as a honey pot, where we were expecting it to be ravaged. This is normally not what we want to happen, but for malware analysis, this is exactly the strategy we went to implement. With our vulnerable machine deployed, we captured traffic for a set amount of time, and we also deployed our machine in a specific region. I decided to deploy in northern california despite the real desire to deploy somewhere more interesting such as hong kong or singapore. Reason being, everyone wants a piece of the USA so who wouldnt want to get their hands on a honey pot here?"
         />
-        <ListExampleDivided />
+        <ListExampleDivided
+        title= "List"
+        header= "IP Addresses"
+        content="testing"
+         />
+
         <MeatPotatoes
           number="2"
           solutionStep="Analyzing the IP"
@@ -52,6 +57,21 @@ function HoneyPot() {
           solutionImage={input}
           moreInfo="With the reverse shell established I'm able to browse the files for what I'm looking for. After catting the flag file, I get the keys to the THM kingdom"
         />
+        <ListExampleDivided
+        icon="check"
+        header= "uname -a"
+        content="The uname tool is most commonly used to determine the processor architecture, the system hostname and the version of the kernel running on the system. -a, (--all) - When the -a option is used, uname behaves the same as if the -snrvmo options have been given. why would someone want to run this?"
+         />
+         <ListExampleDivided
+         icon="check"
+         header= "/proc/cpuinfo"
+         content=" The file /proc/cpuinfo displays what type of processor your system is running including the number of CPUs present. Here is an example output from cat /proc/cpuinfo of a system."
+          />
+          <ListExampleDivided
+          icon="check"
+          header= "free -m | grep Mem | awk "
+          content="This will report the percentage of memory that's free"
+           />
 
 
 
