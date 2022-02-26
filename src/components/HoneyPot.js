@@ -27,9 +27,9 @@ function HoneyPot() {
           moreInfo="We used Tpot which is a github package allowing us to view who was trying to get some honey from our sweet, sweet honey pot. We sppun up an EC2 instance purposeply vulnerably, referred to in the biz as a honey pot, where we were expecting it to be ravaged. This is normally not what we want to happen, but for malware analysis, this is exactly the strategy we went to implement. With our vulnerable machine deployed, we captured traffic for a set amount of time, and we also deployed our machine in a specific region. I decided to deploy in northern california despite the real desire to deploy somewhere more interesting such as hong kong or singapore. Reason being, everyone wants a piece of the USA so who wouldnt want to get their hands on a honey pot here?"
         />
         <ListExampleDivided
-        title= "List"
-        header= "IP Addresses"
-        content="testing"
+        icon="check"
+        header= "Passwords "
+        content="This will report the percentage of memory that's free"
          />
 
         <MeatPotatoes
