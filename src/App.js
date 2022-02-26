@@ -11,6 +11,8 @@ import {
 } from "semantic-ui-react";
 
 import MenuDefault from "./components/Menu";
+import HoneyPot from "./components/HoneyPot";
+
 import Log4J from "./components/Log4J";
 import Home from "./components/Home";
 import Evernote from "./components/Evernote";
@@ -34,6 +36,7 @@ function App() {
                 <Route  path="/log4j" element={<Log4J />} />
                 <Route  path="/evernote" element={<Evernote />} />
                 <Route  path="/SearchSploit" element={<SearchSploit />} />
+                <Route  path="/HoneyPot" element={<HoneyPot />} />
 
                 <Route  path="/blog" element={<Blog />} />
               </Routes>
