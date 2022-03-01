@@ -8,6 +8,7 @@ import ip from "../images/ip.png";
 import vuln from "../images/vuln.png";
 import cowrie from "../images/cowrie.jpg";
 import input from "../images/input.jpg";
+import noe from "../images/noe.gif";
 
 function HoneyPot() {
   return (
@@ -88,7 +89,7 @@ function HoneyPot() {
           <MeatPotatoes
             number="6"
             solutionStep="Consciously Uncoupling"
-            solutionImage={"https://media2.giphy.com/media/l4uYCprl0DqRmAeZ7z/giphy.gif"}
+            solutionImage={noe}
             moreInfo="As the great goop once said, we have to uncouple the EC2 (aka termiante it.) Someone could have told me the literal definition of a honeypot, but seeing it with my own eyes helps see how persistent certain attackers can be. It's been real fullstack, thank you"
           />
           <ListExampleDivided
