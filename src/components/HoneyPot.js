@@ -60,14 +60,14 @@ function HoneyPot() {
             number="4"
             solutionStep="Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker."
             solutionImage={cowrie}
-            moreInfo="I'm going to use search sploit to scan for known vulnerabilities and download the file for easy execution."
+            moreInfo="And yes it did work! I wasn't one of the lucky ones who got brute forced or had malware downloaded, but I really wanted it. I didnt have anything too out of the ordinary happen in all actuality. What was most interesting to me was the username and password clouds. That is information that can cause some serious dammage if in the wrongs hands and this is a very clear illustration of how insecure those credentials could be."
           />
 
           <MeatPotatoes
             number="5"
-            solutionStep="New machine who this"
+            solutionStep="Top 10 Hits"
             solutionImage={input}
-            moreInfo="With the reverse shell established I'm able to browse the files for what I'm looking for. After catting the flag file, I get the keys to the THM kingdom"
+            moreInfo="Another great feature is being able to distill the top 10 commands tried to be carried out against me. Try again you bad mother. Below is a breakdown of what we could assume was being carried out."
           />
           <ListExampleDivided
             icon="check"
@@ -83,6 +83,18 @@ function HoneyPot() {
             icon="check"
             header="free -m | grep Mem | awk "
             content="This will report the percentage of memory that's free"
+          />
+
+          <MeatPotatoes
+            number="6"
+            solutionStep="Consciously Uncoupling"
+            solutionImage={"https://media2.giphy.com/media/l4uYCprl0DqRmAeZ7z/giphy.gif"}
+            moreInfo="As the great goop once said, we have to uncouple the EC2 (aka termiante it.) Someone could have told me the literal definition of a honeypot, but seeing it with my own eyes helps see how persistent certain attackers can be. It's been real fullstack, thank you"
+          />
+          <ListExampleDivided
+            icon="check"
+            header="I am released into the wild."
+            content="Footstomp."
           />
         </Grid.Column>
       </Grid>
