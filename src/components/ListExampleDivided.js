@@ -4,10 +4,10 @@ import { List } from 'semantic-ui-react'
 const ListExampleDivided = (props) => (
   <List divided relaxed>
     <List.Item>
-      <List.Icon name={props.icon} size='large' verticalAlign='middle' />
+      <List.Icon name={props.icon} size='large' verticalAlign='top' />
       <List.Content>
-        <List.Header as='a'>{props.header}</List.Header>
-        <List.Description as='a'>{props.content}</List.Description>
+        <List.Header >{props.header}</List.Header>
+        <List.Description >{props.content}</List.Description>
       </List.Content>
     </List.Item>
     <hr style={{border:".5px solid black"}}/>

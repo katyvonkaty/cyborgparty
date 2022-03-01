@@ -21,7 +21,7 @@ const Options = (props) => {
           <Item.Header as="a">Le Honey Pot </Item.Header>
           <Item.Meta>
             <span className="cinema">
-              They appear to be an easy entry point into a network to distract attackers from looking at other parts of the system. They are a deliberate hole in the security of the system that can be attacked without causing harm. They allow IT teams to gather valuable intelligence on hackers who are attempting to gain access to their networks.{" "}
+              Appears to be an easy entry point into a network to distract attackers from looking at other parts of the system. They are a deliberate hole in the security of the system that can be attacked without causing harm. They allow IT teams to gather valuable intelligence on hackers who are attempting to gain access to their networks.{" "}
             </span>
           </Item.Meta>
           <Item.Extra>
@@ -29,7 +29,7 @@ const Options = (props) => {
             <Label>EC2</Label>
             <Label content="HoneyPot" />
 
-            <Label content="Java" />
+            <Label content="Cowrie" />
           </Item.Extra>
 
           <Button

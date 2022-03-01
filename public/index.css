@@ -52,6 +52,10 @@ button a {
   color:white !important;
 }
 
+.ui.list .list>.item>i.icon, .ui.list>.item>i.icon {
+  color:#00b5ad!important;
+}
+
 .ui.teal.button, .ui.teal.buttons .button {
   color:white !important;
 }
