@@ -105,7 +105,7 @@ function HoneyPot() {
             number="6"
             solutionStep="Consciously Decoupling"
             solutionImage={noe}
-            moreInfo="As the great goop once said, we have to uncouple the EC2 (aka terminate it.) I am thrilled with the experience of seeing how a vulnerable machine is preyed upon. It is by seeing the security weaknesses we are able to build stronger walls to protect our machines. It's been real fullstack, thank you"
+            moreInfo="As the great goop once said, we have to consciously uncouple the EC2 (aka terminate it.) I am thrilled with the experience of seeing how a vulnerable machine is preyed upon. It is by seeing the security weaknesses we are able to build stronger walls to protect our machines. It's been real fullstack, thank you"
           />
           <ListExampleDivided
             icon="check"
