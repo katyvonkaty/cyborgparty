@@ -83,7 +83,7 @@ function HoneyPot() {
             number="5"
             solutionStep="Top 10 Greatest Hits"
             solutionImage={input}
-            moreInfo="Another great feature is being able to distill the top 10 commands tried to be carried out against me. Try again you bad mother. Below is a breakdown of what we could assume was being carried out."
+            moreInfo="Another great feature is being able to distill the top 10 commands that the attacker used on my machine. Below is a breakdown of what we could assume the attacks were trying to accomplish."
           />
           <ListExampleDivided
             icon="check"
@@ -98,19 +98,19 @@ function HoneyPot() {
           <ListExampleDivided
             icon="check"
             header="free -m | grep Mem | awk "
-            content="This will report the percentage of memory that's free"
+            content="This will report the percentage of memory that's free -- makes sense giving the CVE cited above 😈"
           />
 
           <MeatPotatoes
             number="6"
-            solutionStep="Consciously Uncoupling"
+            solutionStep="Consciously Decoupling"
             solutionImage={noe}
-            moreInfo="As the great goop once said, we have to uncouple the EC2 (aka termiante it.) Someone could have told me the literal definition of a honeypot, but seeing it with my own eyes helps see how persistent certain attackers can be. It's been real fullstack, thank you"
+            moreInfo="As the great goop once said, we have to uncouple the EC2 (aka terminate it.) I am thrilled with the experience of seeing how a vulnerable machine is preyed upon. It is by seeing the security weaknesses we are able to build stronger walls to protect our machines. It's been real fullstack, thank you"
           />
           <ListExampleDivided
             icon="check"
-            header="I am released into the wild."
-            content="Footstomp."
+            header="Footstomp."
+            content="I am released into the cyber wilderness."
           />
         </Grid.Column>
       </Grid>
