@@ -44,7 +44,22 @@ function HoneyPot() {
             number="2"
             solutionStep="Analyzing the IP"
             solutionImage={ip}
-            moreInfo="Cisco Talos Intelligence Group is one of the largest commercial threat intelligence teams in the world, comprised of world-class researchers, analysts and engineers. These teams are supported by unrivaled telemetry and sophisticated systems to create accurate, rapid and actionable threat intelligence for Cisco customers, products and services. Talos defends Cisco customers against known and emerging threats, discovers new vulnerabilities in common software, and interdicts threats in the wild before they can further harm the internet at large. Talos maintains the official rule sets of Snort.org, ClamAV, and SpamCop, in addition to releasing many open-source research and analysis tools."
+            moreInfo="Using the above image, we can see the 3 most suspicious IP's. Cisco Talos Intelligence Group is one of the largest commercial threat intelligence teams in the world, comprised of world-class researchers, analysts and engineers. These teams are supported by unrivaled telemetry and sophisticated systems to create accurate, rapid and actionable threat intelligence for Cisco customers, products and services. Talos defends Cisco customers against known and emerging threats, discovers new vulnerabilities in common software, and interdicts threats in the wild before they can further harm the internet at large. Talos maintains the official rule sets of Snort.org, ClamAV, and SpamCop, in addition to releasing many open-source research and analysis tools."
+          />
+          <ListExampleDivided
+            icon="check"
+            header="77.31.2.91"
+            content="Spambot based out of Saudi Arabia."
+          />
+          <ListExampleDivided
+            icon="check"
+            header="177.126.216.72"
+            content="Spambot based out of Brazil."
+          />
+          <ListExampleDivided
+            icon="check"
+            header="195.114.5.251"
+            content="Not a whole lot of info on this guy! Stay tuned."
           />
           <MeatPotatoes
             number="3"
@@ -59,14 +74,14 @@ function HoneyPot() {
           />
           <MeatPotatoes
             number="4"
-            solutionStep="Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker."
+            solutionStep="Cowrie is a medium to high interaction SSH and Telnet honeypot. "
             solutionImage={cowrie}
-            moreInfo="And yes it did work! I wasn't one of the lucky ones who got brute forced or had malware downloaded, but I really wanted it. I didnt have anything too out of the ordinary happen in all actuality. What was most interesting to me was the username and password clouds. That is information that can cause some serious dammage if in the wrongs hands and this is a very clear illustration of how insecure those credentials could be."
+            moreInfo="Designed to log brute force attacks and the shell interaction performed by the attacker. Desite my prayers to the cyber gods to have malware installed on my machine, I was not one of the lucky ones. I didnt have anything too malicious happen in all actuality (sad face). What was most interesting to me was the username and password clouds and the consequences associated with those credentiasl being exposed. That information can cause some serious dammage if in the wrong hands, we we have seen over the years in countless data breaches."
           />
 
           <MeatPotatoes
             number="5"
-            solutionStep="Top 10 Hits"
+            solutionStep="Top 10 Greatest Hits"
             solutionImage={input}
             moreInfo="Another great feature is being able to distill the top 10 commands tried to be carried out against me. Try again you bad mother. Below is a breakdown of what we could assume was being carried out."
           />
