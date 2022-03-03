@@ -15,30 +15,30 @@ function HoneyPot() {
     <Container class="testing" centered style={{ marginTop: "20px" }}>
       <Grid>
         <Grid.Column centered>
-          <Tag CVEscore="The Honey Pot" label="AWS" />
+          <Tag CVEscore="The Honey Pot" label="AWS EC2 Instance" />
 
-          <h1> Getting Vulnerable </h1>
+          <h1> Winnie the Pooh & The Honey Pot </h1>
           <MeatPotatoes
             number="1"
-            solutionStep="What is a TPOT?"
+            solutionStep="Sooo.. what is a TPOT?"
             solutionImage={honey}
-            moreInfo="We used Tpot which is a github package allowing us to view who was trying to get some honey from our sweet, sweet honey pot. We sppun up an EC2 instance purposeply vulnerably, referred to in the biz as a honey pot, where we were expecting it to be ravaged. This is normally not what we want to happen, but for malware analysis, this is exactly the strategy we went to implement. With our vulnerable machine deployed, we captured traffic for a set amount of time, and we also deployed our machine in a specific region. I decided to deploy in northern california despite the real desire to deploy somewhere more interesting such as hong kong or singapore. Reason being, everyone wants a piece of the USA so who wouldnt want to get their hands on a honey pot here?"
+            moreInfo="Tpot is a github package allowing us to view who was trying to get some honey from our sweet, sweet honey pot. We sppun up an EC2 instance purposeply allowing all traffic, all malicious threat actors, all hacktivists and nation states, to come for us aka a honey pot. Normally we try to prevent these characters for assesing our machines, but for malware analysis, this is exactly the strategy we went to implement. With our vulnerable machine deployed, we captured traffic for a set amount of time (or like me, if you forget to turn off your instance 72hours), and we also deployed our machine in a specific region. I decided to deploy in northern california despite the pull to deploy the machine somewhere more interesting such as hong kong or singapore. In the end, the reasoning that 'everyone' wants a piece of the USA won out."
           />
           <ListExampleDivided
             icon="check"
-            header="The Big Picture "
-            content="This is an overall breakdown of how a vulnerable machine can be taken advantage of. There were over 350k attacks on this IP address. I am a no body - it is important to remember in relative to a company that actually has data, financial or health information. "
+            header="Traffic and Attacks"
+            content="This is an overall dashboard of how a vulnerable machine can be taken advantage of - the different avenues, CVE's and just sheer numbers. There were over 350k attacks on this IP address. Imagine if I was a company that actually had important data ie financial, health or other PII data?"
           />
           <ListExampleDivided
             icon="check"
             header="Operating Systems & Passwords "
-            content="we can see what OS's are most suceptible, attackers by country as well as attacks by port. My favorite would have to be the password and username tagclouds. These are showing what attacks tried in attempts to gain access to the machine"
+            content="We can see what OS's are most suceptible, the number of atacks per country, and attacks by port. Personally, I really like the password and username tagclouds. These visuals are showing what attackers tried in attempt to gain access to the machine and our system files."
           />
 
           <ListExampleDivided
             icon="check"
             header="CVE's"
-            content="we also able to see what CVE's were most utilized, thanks to a wonderful open source reporting system, and with this information we can learn more about how to mitigate these risks."
+            content="There is list highlighting the most utilized CVE's. Thanks to a wonderful open source reporting system, and open source community, we can share the information amongst eachother to learn more about how to mitigate these risks."
           />
           <MeatPotatoes
             number="2"
