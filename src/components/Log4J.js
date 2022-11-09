@@ -1,11 +1,8 @@
-import { Container, Divider, Grid, Image, Segment } from "semantic-ui-react";
-import Info from "../components/Info";
+import { Container, Grid } from "semantic-ui-react";
 import Tag from "../components/Tag";
 import Opener from "../components/Opener";
 import Summary from "../components/Summary";
 import MeatPotatoes from "../components/MeatPotatoes";
-import Options from "../components/Options";
-import MenuDefault from "../components/Menu";
 import Foothold from "../components/Foothold";
 import test from "../images/test.gif";
 import portscan from "../images/portscan.png";

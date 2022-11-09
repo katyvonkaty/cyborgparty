@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Label, List } from "semantic-ui-react";
+import { Image, Label } from "semantic-ui-react";
 
 const MeatPotatoes = (props) => {
   return (

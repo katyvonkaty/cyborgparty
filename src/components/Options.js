@@ -1,6 +1,5 @@
 import React from "react";
 import Log4J from "./Log4J";
-import HoneyPot from "./HoneyPot";
 import honey from "../images/honey.png";
 
 

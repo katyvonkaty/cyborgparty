@@ -1,13 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import {
   Container,
-  Divider,
   Grid,
-  Image,
-  Segment,
-  Button,
 } from "semantic-ui-react";
 
 import MenuDefault from "./components/Menu";
@@ -17,9 +13,6 @@ import Log4J from "./components/Log4J";
 import Home from "./components/Home";
 import Evernote from "./components/Evernote";
 import SearchSploit from "./components/SearchSploit";
-
-
-
 import Blog from "./components/Blog";
 import Options from "./components/Options";
 
