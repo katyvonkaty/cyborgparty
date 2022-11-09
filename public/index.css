@@ -14,6 +14,11 @@ body {
   --text-color:#222;
 }
 
+.ui.grey.left.floated.button:hover{
+  background-color: #666 !important;
+  color: white !important;
+}
+
 
 
 code {
@@ -25,12 +30,34 @@ code {
   boz-sizing: border-box;
 }
 
-a {
-  color: teal !important;
+.item a {
+  color:#666 !important;
 }
 
-a:hover {
+.ui.button {
+  color:grey !important;
+  background-color:white !important;
+  border:1px solid grey !important;
+}
+
+hr {
+  border: 0.2px dotted #eee !important;
+}
+
+a {
+  color: white !important;
+}
+
+a.ui.teal.label, .ui.teal.labels .label {
+  background-color: #666 !important;
+}
+
+/* a:hover {
   background-color: #eee;
+} */
+
+.ui.items>.item>.content>a.header {
+  color: black!important
 }
 
 p {
@@ -55,11 +82,20 @@ button a {
 }
 
 .ui.list .list>.item>i.icon, .ui.list>.item>i.icon {
-  color:#00b5ad!important;
+  color:#666!important;
 }
 
-.ui.teal.button, .ui.teal.buttons .button {
+.ui.basic.button, .ui.basic.buttons .button {
+  margin-top:15px;
   color:white !important;
+  background-color: white;
+
+}
+
+.ui[class*="left floated"].button, .ui[class*="left floated"].buttons {
+  margin-top:15px;
+  color:#666 !important;
+
 }
 
 

@@ -36,8 +36,8 @@ const Options = (props) => {
             component={Log4J}
             href="HoneyPot"
             to="/HoneyPot"
-            color="teal"
-            floated="right"
+            color="grey"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />
@@ -70,8 +70,8 @@ const Options = (props) => {
             component={Log4J}
             href="/Log4J"
             to="/Log4J"
-            color="teal"
-            floated="right"
+            color="grey"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />
@@ -104,8 +104,8 @@ const Options = (props) => {
             component={Log4J}
             href="/SearchSploit"
             to="/SearchSploit"
-            color="teal"
-            floated="right"
+            color="grey"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />
@@ -137,8 +137,8 @@ const Options = (props) => {
             component={Log4J}
             href="/Evernote"
             to="/Evernote"
-            color="teal"
-            floated="right"
+            color="grey"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />
@@ -171,8 +171,8 @@ const Options = (props) => {
             href="https://shodan-katiejordan.vercel.app/"
             target="_blank"
             to="/Blog"
-            color="teal"
-            floated="right"
+            color="grey"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />
@@ -204,8 +204,8 @@ const Options = (props) => {
             component={Blog}
             href="https://ceasar-fawn.vercel.app/"
             target="_blank"
-            color="teal"
-            floated="right"
+            color="grey"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />
@@ -237,8 +237,8 @@ const Options = (props) => {
             component={Blog}
             href="https://starsnob.vercel.app/"
             target="_blank"
-            color="teal"
-            floated="right"
+            color="grey"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />
@@ -272,7 +272,7 @@ const Options = (props) => {
             href="https://tickertok.vercel.app/"
             target="_blank"
             color="teal"
-            floated="right"
+            floated="left"
           >
             View Project
             <Icon name="right chevron" />

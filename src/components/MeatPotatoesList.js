@@ -6,7 +6,7 @@ const MeatPotatoes = (props) => {
     <>
       <p style={{ marginTop: "30px" }}>
         {" "}
-        <Label circular color={"teal"}>
+        <Label circular color={"grey"}>
           {" "}
           {props.number}{" "}
         </Label>
