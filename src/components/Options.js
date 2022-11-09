@@ -1,6 +1,9 @@
 import React from "react";
 import Log4J from "./Log4J";
+import Wifi from "./Wifi";
+
 import honey from "../images/honey.png";
+import wifi from "../images/wifi.gif";
 
 
 import Blog from "./Blog";
@@ -11,6 +14,44 @@ const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
       <h3> Recent Projects</h3>
+
+
+      <Item>
+        <Item.Image
+          src={wifi}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">Aircrack NG</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+              Stepping through the methodologies of gaining root on an
+              application by exploting the Log4J vulnerability.{" "}
+            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Linux</Label>
+            <Label>NMAP</Label>
+            <Label content="LDAP" />
+
+            <Label content="Java" />
+          </Item.Extra>
+
+          <Button
+            component={Wifi}
+            href="/Wifi"
+            to="/Wifi"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
+
+
+
       <Item>
         <Item.Image
           src={honey}
