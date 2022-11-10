@@ -79,6 +79,7 @@ function Wifi() {
         />
         <Summary summary = "-c 1 is the channel for the wireless network" />
         <Summary summary = " --bssid D4:76:A0:D4:1A:50 is the access point MAC address. This eliminates extraneous traffic." />
+        <Summary summary = "  -w capitolis_hack is the file name prefix for the file which will contain the IVs." />
 
         <Summary summary =  "wlan0 is the interface name." />
 
