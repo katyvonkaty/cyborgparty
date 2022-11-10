@@ -47,60 +47,66 @@ function Wifi() {
           number="2"
           solutionStep="The system will respond"
           solutionImage={wifi2}
-          moreInfo="With the marshalsec utility built, we can start an LDAP referral server to direct connections to our secondary HTTP server (which we will prepare in just a moment)."
+          moreInfo="At this point, the interface should be ready to use."
         />
 
         <MeatPotatoes
           number="3"
           solutionStep="Interfaces"
-          moreInfo="The presence of a [phy0] tag at the end of the driver name is an indicator for mac80211, so the Broadcom card is using a mac80211 driver. Note that mac80211 is supported only since aircrack-ng v1.0-rc1, and it won't work with v0.9.1. Both entries of the Atheros card show “madwifi-ng” as the driver - follow the madwifi-ng-specific steps to set up the Atheros card. Finally, the Ralink shows neither of these indicators, so it is using an ieee80211 driver - see the generic instructions for setting it up. "
+          moreInfo="The presence of a [phy0] tag at the end of the driver name is an indicator for mac80211, so the Broadcom card is using a mac80211 driver. Note that mac80211 is supported only since aircrack-ng v1.0-rc1, and it won't work with v0.9.1. "
 
           solutionImage={wifi3}
         />
         <MeatPotatoes
           number="4"
-          solutionStep="Serve exploit on HTTP server"
+          solutionStep="Wireless Clients"
           solutionImage={kali}
-          moreInfo="Your payload is created and compiled, it is hosted with an HTTP server in one terminal, your LDAP referral server is up and waiting in another terminal -- next prepare a netcat listener to catch your reverse shell in yet another new terminal window."
+          moreInfo="Here what it looks like if a wireless client is connected to the network:
+
+          ."
         />
         <MeatPotatoes
           number="5"
-          solutionStep="Prepare netcat listener"
+          solutionStep="Natural Selection"
           solutionImage={wifi5}
-          moreInfo="Nuff said."
+          moreInfo="Identifying the target."
         />
         <MeatPotatoes
           number="6"
           solutionStep="Trigger the exploit and fire the JNDI syntax"
-          solutionImage={wifi}
-          moreInfo="You have now received initial access and command-and-control on a vanilla, freshly installed Apache Solr instance. This is just one example of many, many vulnerable applications affected by this log4j vulnerability."
-        />
-           <MeatPotatoes
-    
           solutionImage={maybe1}
+          moreInfo="-c 9 is the channel for the wireless network
+          <hr>
+          --bssid 00:14:6C:7E:40:80 is the access point MAC address. This eliminates extraneous traffic.
+          -w psk is the file name prefix for the file which will contain the IVs.
+          ath0 is the interface name."
         />
+       
         <MeatPotatoes
           number="7"
-          solutionStep="I have gained"
+          solutionStep="Start airodump-ng to collect authentication handshake"
           solutionImage={maybe2}
-          moreInfo="Now that you have gained a reverse shell connection on the victim machine, you can continue to take any action you might like."
+          moreInfo="The purpose of this step is to run airodump-ng to capture the 4-way authentication handshake for the AP we are interested in."
         />
         <MeatPotatoes
           number="8"
-          solutionStep="Here you can see my activity in the log file!"
+          solutionStep="Use aireplay-ng to deauthenticate the wireless client"
           solutionImage={wifi6}
-          moreInfo="Running amok in the logs."
+          moreInfo="This step sends a message to the wireless client saying that that it is no longer associated with the AP. The wireless client will then hopefully reauthenticate with the AP. The reauthentication is what generates the 4-way authentication handshake we are interested in collecting. This is what we use to break the WPA/WPA2 pre-shared key."
         />
         <MeatPotatoes
           number="9"
           solutionImage={wifi7}
-          solutionStep="Proof of concept"
+          solutionStep="Traffic capture over wireshark"
         />
        
             <MeatPotatoes
           number="9"
           solutionImage={wifigif}
-          solutionStep="Proof of concept"
+          solutionStep= "./getpasswd"
+          moreInfo= "Now at this point, aircrack-ng will start attempting to crack the pre-shared key. Depending on the speed of your CPU and the size of the dictionary, this could take a long time, even days.
+
+          Here is what successfully cracking the pre-shared key looks like:"
         />
         <Foothold foothold={obama} />
       </Grid.Column>
