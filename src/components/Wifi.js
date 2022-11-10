@@ -35,25 +35,25 @@ function Wifi() {
       <Grid.Column centered>
         <Tag CVEscore="AirCrack NG" label="Kali Linux" />
         <Opener opener="Release the WIFI" problemContent="WIFI " />
-        <Summary summary="The application present on this target specifically uses ports that may not be immediately noticed by nmap. For the whole picture perspective, scan all ports via nmap and the -p- flag" />
-        <Summary summary="The format of the usual syntax that takes advantage of this looks like so:" />
+        <Summary summary="The objective is to capture the WPA/WPA2 authentication handshake and then use aircrack-ng to crack the pre-shared key." />
+        <Summary summary="This can be done either actively or passively. “Actively” means you will accelerate the process by deauthenticating an existing wireless client. “Passively” means you simply wait for a wireless client to authenticate to the WPA/WPA2 network. The advantage of passive is that you don't actually need injection capability and thus the Windows version of aircrack-ng can be used." />
         <MeatPotatoes
           number="1"
-          solutionStep="This target machine is running Apache Solr 8.11.0, one example of software that is known to include this vulnerable log4j package."
+          solutionStep="Start the wireless interface in monitor mode."
           solutionImage={wifi1}
-          moreInfo="For the sake of showcasing this vulnerability, the application runs on Java 1.8.0_181. You may already know the general payload to abuse this log4j vulnerability.."
+          moreInfo="The purpose of this step is to put your card into what is called monitor mode. Monitor mode is the mode whereby your card can listen to every packet in the air. Normally your card will only “hear” packets addressed to you. By hearing every packet, we can later capture the WPA/WPA2 4-way handshake. As well, it will allow us to optionally deauthenticate a wireless client in a later step."
         />
         <MeatPotatoes
           number="2"
-          solutionStep="Compile and execute the marshal sec utility & starting LDAP server"
+          solutionStep="The system will respond"
           solutionImage={wifi2}
           moreInfo="With the marshalsec utility built, we can start an LDAP referral server to direct connections to our secondary HTTP server (which we will prepare in just a moment)."
         />
 
         <MeatPotatoes
           number="3"
-          solutionStep="Create java payload (no experience necessary!)"
-          moreInfo="For this payload, you can see we will execute a command on the target, specifically nc -e /bin/bash to call back to our our attacker machine"
+          solutionStep="Interfaces"
+          moreInfo="The presence of a [phy0] tag at the end of the driver name is an indicator for mac80211, so the Broadcom card is using a mac80211 driver. Note that mac80211 is supported only since aircrack-ng v1.0-rc1, and it won't work with v0.9.1. Both entries of the Atheros card show “madwifi-ng” as the driver - follow the madwifi-ng-specific steps to set up the Atheros card. Finally, the Ralink shows neither of these indicators, so it is using an ieee80211 driver - see the generic instructions for setting it up. "
 
           solutionImage={wifi3}
         />
