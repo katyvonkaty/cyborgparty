@@ -77,11 +77,10 @@ function Wifi() {
           solutionImage={maybe1}
           
         />
-        <Summary summary = "-c 9 is the channel for the wireless network" />
-        <Summary summary = " --bssid 00:14:6C:7E:40:80 is the access point MAC address. This eliminates extraneous traffic." />
+        <Summary summary = "-c 1 is the channel for the wireless network" />
+        <Summary summary = " --bssid D4:76:A0:D4:1A:50 is the access point MAC address. This eliminates extraneous traffic." />
 
-        <Summary summary = "-w psk is the file name prefix for the file which will contain the IVs."/>
-        <Summary summary =  "ath0 is the interface name." />
+        <Summary summary =  "wlan0 is the interface name." />
 
 
         <MeatPotatoes
