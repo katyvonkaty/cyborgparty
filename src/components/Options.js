@@ -31,10 +31,10 @@ const Options = (props) => {
           </Item.Meta>
           <Item.Extra>
             <Label>Linux</Label>
-            <Label>NMAP</Label>
-            <Label content="LDAP" />
+            <Label>APT</Label>
+            <Label content="Wireless Compromise" />
 
-            <Label content="Java" />
+            <Label content="Network Traffic Flow" />
           </Item.Extra>
 
           <Button

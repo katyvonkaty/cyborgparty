@@ -73,15 +73,17 @@ function Wifi() {
         />
         <MeatPotatoes
           number="6"
-          solutionStep="Trigger the exploit and fire the JNDI syntax"
+          solutionStep="Command Breakdown"
           solutionImage={maybe1}
-          moreInfo="-c 9 is the channel for the wireless network
-          <hr>
-          --bssid 00:14:6C:7E:40:80 is the access point MAC address. This eliminates extraneous traffic.
-          -w psk is the file name prefix for the file which will contain the IVs.
-          ath0 is the interface name."
+          
         />
-       
+        <Summary summary = "-c 9 is the channel for the wireless network" />
+        <Summary summary = " --bssid 00:14:6C:7E:40:80 is the access point MAC address. This eliminates extraneous traffic." />
+
+        <Summary summary = "-w psk is the file name prefix for the file which will contain the IVs."/>
+        <Summary summary =  "ath0 is the interface name." />
+
+
         <MeatPotatoes
           number="7"
           solutionStep="Start airodump-ng to collect authentication handshake"
@@ -106,8 +108,7 @@ function Wifi() {
           solutionStep= "./getpasswd"
           moreInfo= "Now at this point, aircrack-ng will start attempting to crack the pre-shared key. Depending on the speed of your CPU and the size of the dictionary, this could take a long time, even days.
 
-          Here is what successfully cracking the pre-shared key looks like:"
-        />
+          Here is what successfully cracking the pre-shared key looks like:"/>
         <Foothold foothold={obama} />
       </Grid.Column>
     </Grid>
