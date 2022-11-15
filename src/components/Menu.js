@@ -29,7 +29,7 @@ export default class MenuDefault extends Component {
         name='reviews'
         active={activeItem === 'reviews'}
         onClick={this.handleItemClick}>
-          <a href="https://github.com/katyvonkaty" target="_blank">  Github </a>
+          <a href="https://github.com/y2katie" target="_blank">  Github </a>
         </Menu.Item>
 
         <Menu.Item

@@ -64,7 +64,7 @@ function Infiltrate() {
 
         />
 
-        <Button > <a href="https://docs.google.com/document/d/1mX-LHujjinj2Nm_heokgEsUMJlJ9WP8hZRrdIcxmjC4/edit?usp=sharing" target="blank" class="test"> Read the Full Report Here </a></Button>
+        <Button > <a href="https://drive.google.com/file/d/1gU445U6BVxDQ4xhE2WWdrJrpy-mNaZBX/view" target="blank" class="test"> Read the Full Report Here </a></Button>
       
       </Grid.Column>
     </Grid>
