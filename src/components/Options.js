@@ -1,9 +1,12 @@
 import React from "react";
 import Log4J from "./Log4J";
 import Wifi from "./Wifi";
+import Infiltrate from "./Infiltrate";
+
 
 import honey from "../images/honey.png";
 import wifi from "../images/wifi.gif";
+import generation from "../images/generation.png";
 
 
 import Blog from "./Blog";
@@ -15,6 +18,39 @@ const Options = (props) => {
     <Item.Group divided style={{ marginTop: "80px" }}>
       <h3> Recent Projects</h3>
 
+      <Item>
+        <Item.Image
+          src={generation}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">Ode to a Penetration Test</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+              Do I have what it takes to hack my company? Click the link to find out more.{" "}
+            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Script Kiddie</Label>
+            <Label>Burpsuite</Label>
+            <Label>Wireshark</Label>
+            <Label content="XML Attack" />
+
+            <Label content="Metasploit" />
+          </Item.Extra>
+
+          <Button
+            component={Wifi}
+            href="/Infiltrate"
+            to="/Infiltrate"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
 
       <Item>
         <Item.Image

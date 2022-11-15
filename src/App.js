@@ -15,6 +15,8 @@ import SearchSploit from "./components/SearchSploit";
 import Blog from "./components/Blog";
 import Options from "./components/Options";
 import Wifi from "./components/Wifi";
+import Infiltrate from "./components/Infiltrate";
+
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
                 <Route  path="/HoneyPot" element={<HoneyPot />} />
                 <Route  path="/blog" element={<Blog />} />
                 <Route  path="/Wifi" element={<Wifi />} />
+                <Route  path="/Infiltrate" element={<Infiltrate />} />
+
 
               </Routes>
               <Options />
