@@ -12,6 +12,8 @@ import generation from "../images/generation.png";
 import hydra from "../images/hydra.jpg";
 import wifi2 from "../images/wifi2.png";
 import nikto from "../images/nikto.png";
+import offensive from "../images/offensive.pdf";
+
 
 import cve from "../images/cve.png";
 
@@ -30,10 +32,10 @@ function Infiltrate() {
   <Container class="testing" centered style={{ marginTop: "20px" }}>
     <Grid centered>
       <Grid.Column centered>
-        <Tag CVEscore="Pen Testing" label="Kali Linux" />
+        <Tag CVEscore="Pen Testing" label="Exploit Public-Facing Application" />
         <Opener opener="Ode to a Penetration Test" problemContent="Password:l3tm3in " />
         <Summary summary="This was an external test where I wanted to see if perhaps a user was lazy with credentials and I could use a dictionary attack to gain access to the login page and into the proper system." />
-        <Summary summary="This can be done either actively or passively. “Actively” means you will accelerate the process by deauthenticating an existing wireless client. “Passively” means you simply wait for a wireless client to authenticate to the WPA/WPA2 network. The advantage of passive is that you don't actually need injection capability and thus the Windows version of aircrack-ng can be used." />
+        <Summary summary="When attacking any system, it is essential to gather useful information that will help define who, what, when and where." />
         <MeatPotatoes
           number="1"
           solutionStep="Project Overview"
@@ -62,7 +64,8 @@ function Infiltrate() {
 
         />
 
-        <Button> Read the Full Report Here</Button>
+        <Button > <a href="https://docs.google.com/document/d/1mX-LHujjinj2Nm_heokgEsUMJlJ9WP8hZRrdIcxmjC4/edit?usp=sharing" target="blank" class="test"> Read the Full Report Here </a></Button>
+      
       </Grid.Column>
     </Grid>
   </Container>

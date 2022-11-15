@@ -34,6 +34,15 @@ code {
   color:#666 !important;
 }
 
+.test {
+  color:black !important;
+  text-decoration: underline;
+}
+
+.test.button{
+  background-color:yellow !important;
+}
+
 .ui.button {
   color:grey !important;
   background-color:white !important;
