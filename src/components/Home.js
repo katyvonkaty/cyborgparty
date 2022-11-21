@@ -8,7 +8,7 @@ const Home = () => {
           <h1> Hi, I'm Katie and I'm a Cyber Security Analyst. </h1>
           <h3 style={{fontWeight:"300"}}>
             {" "}
-            Other interests include baking, my dog, and becoming the best hacker in the world.
+            Interests include baking, biking, and my dog Teddy.
 
           </h3>
 
