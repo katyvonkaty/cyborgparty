@@ -2,9 +2,11 @@ import React from "react";
 import Log4J from "./Log4J";
 import Wifi from "./Wifi";
 import Infiltrate from "./Infiltrate";
-
+import Network from "./Network"
 
 import honey from "../images/honey.png";
+import physical from "../images/physical.jpg";
+
 import wifi from "../images/wifi.gif";
 import generation from "../images/generation.png";
 
@@ -43,6 +45,38 @@ const Options = (props) => {
             component={Wifi}
             href="/Infiltrate"
             to="/Infiltrate"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
+
+      <Item>
+        <Item.Image
+          src={physical}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">Networking in Virtual Box</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+Setting up a network in virtual box            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Network Topology</Label>
+            <Label>DHCP</Label>
+            <Label>DNS</Label>
+            <Label content="XML Attack" />
+
+            <Label content="Metasploit" />
+          </Item.Extra>
+
+          <Button
+            // href="/Network"
+            // to="/Network"
             color="grey"
             floated="left"
           >

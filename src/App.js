@@ -16,6 +16,8 @@ import Blog from "./components/Blog";
 import Options from "./components/Options";
 import Wifi from "./components/Wifi";
 import Infiltrate from "./components/Infiltrate";
+import Network from "./components/Network";
+
 
 
 
@@ -36,6 +38,8 @@ function App() {
                 <Route  path="/blog" element={<Blog />} />
                 <Route  path="/Wifi" element={<Wifi />} />
                 <Route  path="/Infiltrate" element={<Infiltrate />} />
+                <Route  path="/Network" element={<Network />} />
+
 
 
               </Routes>
