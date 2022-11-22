@@ -37,13 +37,13 @@ function Network() {
           number="2"
           solutionStep="What type of network options are available on a virtual box? "
         />
-        <Summary summary= "Network Address Translation:this networking is used when guest machine require internet connection. Guest machine can access all the things which are accessible by Host machine.But no other machines including Host can’t access the guest."/>
+        <Summary summary= "Network Address Translation - used when the guest machine requires internet connection. Guest machine can access all the things which are accessible by Host machine, but no other machines including host can access the guest."/>
         <Summary summary= "Bridged networking – use this one when you require a separate IP address for your virtual machine." />
-        <Summary summary=" Internal networking – This networking will be used when you want to establish a separate network for your virtual machines (Running in single host). But host is excluded in this network." />
-        <Summary summary="Host-only networking – In this networking, host and guest can communicate. No other machines in 
+        <Summary summary=" Internal networking –  used when you want to establish a separate network for your virtual machines (Running in single host). But host is excluded in this network." />
+        <Summary summary="Host-only networking – host and guest can communicate; no other machines in 
         network can access guest machine." />
-        <Summary summary="NAT with Port-forwarding – Use when you want other machines to access guest machine without  
-                assigning a separate IP address to Guest. And guest machine wants access to outside." />
+        <Summary summary="NAT with Port-forwarding – when you want other machines to access guest machine without  
+                assigning a separate IP address to Guest, and guest machine wants access to outside." />
 
     
         <MeatPotatoes
