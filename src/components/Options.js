@@ -69,12 +69,14 @@ Setting up a network in virtual box            </span>
             <Label>Network Topology</Label>
             <Label>DHCP</Label>
             <Label>DNS</Label>
+            <Label>IP Addresses</Label>
          
           </Item.Extra>
 
           <Button
-            // href="/Network"
-            // to="/Network"
+          component={Network}
+            href="/Network"
+            to="/Network"
             color="grey"
             floated="left"
           >
