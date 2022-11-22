@@ -69,9 +69,7 @@ Setting up a network in virtual box            </span>
             <Label>Network Topology</Label>
             <Label>DHCP</Label>
             <Label>DNS</Label>
-            <Label content="XML Attack" />
-
-            <Label content="Metasploit" />
+         
           </Item.Extra>
 
           <Button
