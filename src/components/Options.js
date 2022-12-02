@@ -42,7 +42,6 @@ const Options = (props) => {
             <Label content="Memory Dump" />
 
           </Item.Extra>
-
           <Button
             component={vol}
             href="/Volatility"
