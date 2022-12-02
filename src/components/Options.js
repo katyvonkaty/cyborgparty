@@ -43,9 +43,9 @@ const Options = (props) => {
 
           </Item.Extra>
           <Button
-            // component={vol}
-            // href="/Volatility"
-            // to="/Volatility"
+            component={vol}
+            href="/Volatility"
+            to="/Volatility"
             color="grey"
             floated="left"
           >
