@@ -5,8 +5,8 @@ import Summary from "../components/Summary";
 import MeatPotatoes from "../components/MeatPotatoes";
 import Foothold from "../components/Foothold";
 import vol from "../images/vol.jpg";
-import portscan from "../images/portscan.png";
-import marshal from "../images/marshal_sec.png";
+import build from "../images/build.png";
+import reader from "../images/reader.png";
 import java from "../images/java_exploit.png";
 import wifi from "../images/wifi.png";
 import wifi1 from "../images/wifi1.png";
@@ -33,15 +33,14 @@ function Volatility() {
   <Container class="testing" centered style={{ marginTop: "20px" }}>
     <Grid centered>
       <Grid.Column centered>
-        <Tag CVEscore="AirCrack NG" label="Kali Linux" />
-        <Opener opener="Release the WIFI" problemContent="WIFI " />
-        <Summary summary="The objective is to capture the WPA/WPA2 authentication handshake and then use aircrack-ng to crack the pre-shared key." />
-        <Summary summary="This can be done either actively or passively. “Actively” means you will accelerate the process by deauthenticating an existing wireless client. “Passively” means you simply wait for a wireless client to authenticate to the WPA/WPA2 network. The advantage of passive is that you don't actually need injection capability and thus the Windows version of aircrack-ng can be used." />
+        <Tag CVEscore="Volatility" label="Extracting Digital Artifacts" />
+        <Opener opener="Memory Forensics" problemContent="Practical Investigations " />
+        <Summary summary="The framework is intended to introduce people to the techniques and complexities associated with extracting digital artifacts from volatile memory samples and provide a platform for further work into this exciting area of research." />
         <MeatPotatoes
           number="1"
-          solutionStep="Start the wireless interface in monitor mode."
-          solutionImage={wifi1}
-          moreInfo="The purpose of this step is to put your card into what is called monitor mode. Monitor mode is the mode whereby your card can listen to every packet in the air. Normally your card will only “hear” packets addressed to you. By hearing every packet, we can later capture the WPA/WPA2 4-way handshake. As well, it will allow us to optionally deauthenticate a wireless client in a later step."
+          solutionStep="What is the build version of the host machine in Case 001?"
+          solutionImage={build}
+          moreInfo="Volatility is built off of multiple plugins working together to obtain information from the memory dump. In this instance, the command windows.info will give us the info we need."
         />
         <MeatPotatoes
           number="2"
@@ -55,7 +54,7 @@ function Volatility() {
           solutionStep="Interfaces"
           moreInfo="The presence of a [phy0] tag at the end of the driver name is an indicator for mac80211, so the Broadcom card is using a mac80211 driver. Note that mac80211 is supported only since aircrack-ng v1.0-rc1, and it won't work with v0.9.1. "
 
-          solutionImage={wifi3}
+          solutionImage={reader}
         />
         <MeatPotatoes
           number="4"
