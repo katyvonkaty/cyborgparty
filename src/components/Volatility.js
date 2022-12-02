@@ -61,9 +61,7 @@ function Volatility() {
           number="4"
           solutionStep="What user-agent was employed by the adversary in Case 001?          "
           solutionImage={matrix1}
-          moreInfo="Here what it looks like if a wireless client is connected to the network:
 
-          ."
         />
         <MeatPotatoes
            number="4.5"
