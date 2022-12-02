@@ -3,9 +3,13 @@ import Log4J from "./Log4J";
 import Wifi from "./Wifi";
 import Infiltrate from "./Infiltrate";
 import Network from "./Network"
+import Volatility from "./Volatility"
+
 
 import honey from "../images/honey.png";
 import physical from "../images/physical.jpg";
+import vol from "../images/vol.jpg";
+
 
 import wifi from "../images/wifi.gif";
 import generation from "../images/generation.png";
@@ -19,6 +23,38 @@ const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
       <h3> Recent Projects</h3>
+      <Item>
+        <Item.Image
+          src={vol}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">Memory Forensics</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+            Volatility is the world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples.{" "}
+            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Malware</Label>
+            <Label>Volatility</Label>
+            <Label>Blue team</Label>
+            <Label content="Memory Dump" />
+
+          </Item.Extra>
+
+          <Button
+            component={vol}
+            href="/Volatility"
+            to="/Volatility"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
 
       <Item>
         <Item.Image
