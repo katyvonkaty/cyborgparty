@@ -10,7 +10,7 @@ import reader from "../images/reader.png";
 import explorer from "../images/explorer.png";
 import matrix1 from "../images/matrix1.png";
 import matrix2 from "../images/matrix2.png";
-import wifi2 from "../images/wifi2.png";
+import wanna from "../images/wanna.png";
 import wifigif from "../images/wifi.gif";
 
 import wifi3 from "../images/wifi3.png";
@@ -68,20 +68,23 @@ function Volatility() {
            solutionStep="Nothing to see here just entering the matrix          "
           solutionImage={matrix2}
         />
-        {/* <MeatPotatoes
-          number=""
-          solutionStep="Command Breakdown"
-          solutionImage={maybe1}
+        <MeatPotatoes
+          number="5"
+          solutionStep="WannaCry"
+          solutionImage={wanna}
+          moreInfo= "What is the suspicious parent process PID connected to the decryptor in Case 002? From our current information, what malware is present on the system in Case 002? We got a live one! Hello Wanna cry, wanna play?
+ "
           
-        /> */}
-        {/* <Summary summary = "-c 1 is the channel for the wireless network" />
-        <Summary summary = " --bssid D4:76:A0:D4:1A:50 is the access point MAC address. This eliminates extraneous traffic." />
-        <Summary summary = "  -w capitolis_hack is the file name prefix for the file which will contain the IVs." />
+        />
+        <Summary summary = "The WannaCry ransomware attack was a global epidemic that took place in May 2017." />
+        <Summary summary = "This ransomware attack spread through computers operating Microsoft Windows. User’s files were held hostage, and a Bitcoin ransom was demanded for their return." />
+        <Summary summary = " The WannaCry ransomware attack hit around 230,000 computers globally.
 
-        <Summary summary =  "wlan0 is the interface name." /> */}
+" />
 
+{/* 
 
-        {/* <MeatPotatoes
+        <MeatPotatoes
           number="7"
           solutionStep="Start airodump-ng to collect authentication handshake"
           solutionImage={maybe2}
@@ -97,9 +100,9 @@ function Volatility() {
           number="9"
           solutionImage={wifi7}
           solutionStep="Traffic capture over wireshark"
-        /> */}
+        /> 
        
-            {/* <MeatPotatoes
+            <MeatPotatoes
           number="9"
           solutionImage={wifigif}
           solutionStep= "./getpasswd"
