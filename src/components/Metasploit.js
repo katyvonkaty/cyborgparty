@@ -54,21 +54,23 @@ function Log4J() {
         />
         <MeatPotatoes
           number="5"
-          solutionStep="Prepare netcat listener"
+          solutionStep="Running our Exploit"
           solutionImage={meta4}
-          moreInfo="Nuff said."
+          moreInfo="We select our exploit and attack the route we added previously - which is directed at the docker container. We are offically behind enemey lines! Running this command gives us the user we are looking for as well as their super secure password that I will not be including here.
+
+          "
         />
         <MeatPotatoes
           number="6"
-          solutionStep="Trigger the exploit and fire the JNDI syntax"
+          solutionStep="Socks Prox"
           solutionImage={meta6}
-          moreInfo="You have now received initial access and command-and-control on a vanilla, freshly installed Apache Solr instance. This is just one example of many, many vulnerable applications affected by this log4j vulnerability."
+          moreInfo="To further pivot through the private network, we can create a socks proxy within Metasploit:"
         />
         <MeatPotatoes
           number="7"
-          solutionStep="I have gained"
+          solutionStep="SSH"
           solutionImage={meta7}
-          moreInfo="Now that you have gained a reverse shell connection on the victim machine, you can continue to take any action you might like."
+          moreInfo="With the host scanned, we can see that port 22 is open on the host machine. It also is possible that Santa has re-used his password, and it’s possible to SSH into the host machine from the Docker container to grab the flag"
         />
     
       </Grid.Column>
