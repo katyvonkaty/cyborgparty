@@ -13,8 +13,6 @@ import hydra from "../images/hydra.jpg";
 import wifi2 from "../images/wifi2.png";
 import nikto from "../images/nikto.png";
 import offensive from "../images/offensive.pdf";
-
-
 import cve from "../images/cve.png";
 
 import wifi3 from "../images/wifi3.png";

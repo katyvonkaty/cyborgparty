@@ -4,11 +4,12 @@ import Wifi from "./Wifi";
 import Infiltrate from "./Infiltrate";
 import Network from "./Network"
 import Volatility from "./Volatility"
-
-
+import Metasploit from "./Metasploit"
 import honey from "../images/honey.png";
 import physical from "../images/physical.jpg";
 import vol from "../images/vol.jpg";
+import meta7 from "../images/meta.jpg";
+
 
 
 import wifi from "../images/wifi.gif";
@@ -23,6 +24,39 @@ const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
       <h3> Recent Projects</h3>
+
+      <Item>
+        <Item.Image
+          src={meta7}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">Metasploit</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+            Using Metasploit modules and Meterpreter to compromise systems, network pivoting, & post exploitation
+            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Meterpreter</Label>
+            <Label>Socks Proxy</Label>
+            <Label>Postgres</Label>
+            <Label content="Docker" />
+
+          </Item.Extra>
+          <Button
+            component={vol}
+            href="/Metasploit"
+            to="/Metasploit"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
+
       <Item>
         <Item.Image
           src={vol}
