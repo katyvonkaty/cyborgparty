@@ -17,6 +17,10 @@ import Options from "./components/Options";
 import Wifi from "./components/Wifi";
 import Infiltrate from "./components/Infiltrate";
 import Network from "./components/Network";
+import Volatility from "./components/Volatility";
+import Metasploit from "./components/Metasploit";
+
+
 
 
 
@@ -39,6 +43,10 @@ function App() {
                 <Route  path="/Wifi" element={<Wifi />} />
                 <Route  path="/Infiltrate" element={<Infiltrate />} />
                 <Route  path="/Network" element={<Network />} />
+                <Route  path="/Volatility" element={<Volatility />} />
+                <Route  path="/Metasploit" element={<Metasploit />} />
+
+
 
 
 
