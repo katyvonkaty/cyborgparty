@@ -19,6 +19,10 @@ import Infiltrate from "./components/Infiltrate";
 import Network from "./components/Network";
 import Volatility from "./components/Volatility";
 import Metasploit from "./components/Metasploit";
+import CRSF from "./components/CRSF";
+
+import Footer from "./components/Footer";
+
 
 
 
@@ -45,6 +49,7 @@ function App() {
                 <Route  path="/Network" element={<Network />} />
                 <Route  path="/Volatility" element={<Volatility />} />
                 <Route  path="/Metasploit" element={<Metasploit />} />
+                <Route  path="/CRSF" element={<CRSF />} />
 
 
 
@@ -52,6 +57,7 @@ function App() {
 
               </Routes>
               <Options />
+              <Footer />
 
             </Grid.Column>
           </Grid>

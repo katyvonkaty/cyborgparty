@@ -5,6 +5,8 @@ import Infiltrate from "./Infiltrate";
 import Network from "./Network"
 import Volatility from "./Volatility"
 import Metasploit from "./Metasploit"
+import CRSF from "./CRSF"
+
 import honey from "../images/honey.png";
 import physical from "../images/physical.jpg";
 import vol from "../images/vol.jpg";
@@ -23,7 +25,39 @@ import { Button, Icon, Item, Label } from "semantic-ui-react";
 const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
-      <h3> Recent Projects</h3>
+      <h3> Rabbit Holes to Dive Into: </h3>
+
+      <Item>
+        <Item.Image
+          src={meta7}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">CSRF 3 Ways</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+            Cross Site Request Forgery can be executed a number of ways but most browsers are equipped to stop the attack way before it starts. Here I'm exploring potenial ways a bad actor could use CRSF via token validation, samesite cookie restrictions and referer-based CSRF defenses.
+            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Web Security</Label>
+            <Label>Vunerable</Label>
+            <Label>HTML</Label>
+            <Label content="Docker" />
+
+          </Item.Extra>
+          <Button
+            component={vol}
+            href="/CRSF"
+            to="/CRSF"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
 
       <Item>
         <Item.Image
@@ -292,172 +326,6 @@ Setting up a network in virtual box            </span>
         </Item.Content>
       </Item>
 
-      <Item>
-        <Item.Image
-          src="https://cyberport-katiejordan.vercel.app/static/media/one.b0d6b6db6149bd77387a.jpg"
-          rounded
-        />
-        <Item.Content>
-          <Item.Header as="a">NS Lookup</Item.Header>
-          <Item.Meta>
-            <span className="cinema">
-              Reverse engineering a malicous attacker trying to access top
-              secret information from my evernote account.{" "}
-            </span>
-          </Item.Meta>
-          <Item.Extra>
-            <Label>NS Lookup</Label>
-            <Label>Domains</Label>
-            <Label>Passive Recon</Label>
-            <Label>Phishing</Label>
-          </Item.Extra>
-
-          <Button
-            component={Log4J}
-            href="/Evernote"
-            to="/Evernote"
-            color="grey"
-            floated="left"
-          >
-            View Project
-            <Icon name="right chevron" />
-          </Button>
-        </Item.Content>
-      </Item>
-
-      <Item>
-        <Item.Image
-          src="https://cdn.dribbble.com/users/2064103/screenshots/17226024/media/4c2123a837229d709d2351cd04e7f121.png?compress=1&resize=1600x1200&vertical=top"
-          rounded
-        />
-        <Item.Content>
-          <Item.Header as="a">Modern Shodan</Item.Header>
-          <Item.Meta>
-            <span className="cinema">
-              React based web app focused on a more modern shodan interface, and
-              focusing on the handshake process.
-            </span>
-          </Item.Meta>
-          <Item.Extra>
-            <Label>React</Label>
-            <Label>Passive Recon</Label>
-
-            <Label>Networking</Label>
-            <Label>DNS</Label>
-          </Item.Extra>
-          <Button
-            component={Blog}
-            href="https://shodan-katiejordan.vercel.app/"
-            target="_blank"
-            to="/Blog"
-            color="grey"
-            floated="left"
-          >
-            View Project
-            <Icon name="right chevron" />
-          </Button>
-        </Item.Content>
-      </Item>
-
-      <Item>
-        <Item.Image
-          src="https://media.istockphoto.com/vectors/roman-citizens-man-and-woman-vector-id1218894295?k=20&m=1218894295&s=612x612&w=0&h=mGKwWPRkqoTIUzskgOfOPGzNOfcKO6T61qC3a4YcESc="
-          rounded
-        />
-        <Item.Content>
-          <Item.Header as="a">Ceasar Cipher</Item.Header>
-          <Item.Meta>
-            <span className="cinema">
-              Gaining a better understanding of basic encryption techniques
-              using the ceasar cipher to encrypt and decrypt text.
-            </span>
-          </Item.Meta>
-          <Item.Extra>
-            <Label>React</Label>
-            <Label>JavaScript</Label>
-
-            <Label> Data </Label>
-            <Label> API </Label>
-          </Item.Extra>
-          <Button
-            component={Blog}
-            href="https://ceasar-fawn.vercel.app/"
-            target="_blank"
-            color="grey"
-            floated="left"
-          >
-            View Project
-            <Icon name="right chevron" />
-          </Button>
-        </Item.Content>
-      </Item>
-
-      <Item>
-        <Item.Image
-          src="https://katiejordan.vercel.app/static/media/star.b6b0d419.png"
-          rounded
-        />
-        <Item.Content>
-          <Item.Header as="a">StarSnob</Item.Header>
-          <Item.Meta>
-            <span className="cinema">
-              Utilziing the Yelp API to help deliver snobby restaurant goers the
-              most specific answers based on their query.
-            </span>
-          </Item.Meta>
-          <Item.Extra>
-            <Label>React</Label>
-            <Label>JavaScript</Label>
-
-            <Label> Data </Label>
-            <Label> API </Label>
-          </Item.Extra>
-          <Button
-            component={Blog}
-            href="https://starsnob.vercel.app/"
-            target="_blank"
-            color="grey"
-            floated="left"
-          >
-            View Project
-            <Icon name="right chevron" />
-          </Button>
-        </Item.Content>
-      </Item>
-
-      <Item>
-        <Item.Image
-          src="https://katiejordan.vercel.app/static/media/roar.35a2a37c.jpg"
-          rounded
-        />
-        <Item.Content>
-          <Item.Header as="a">TickerTok</Item.Header>
-          <Item.Meta>
-            <span className="cinema">
-              The unoffical sister app to TikTok - TikerTok focuses on the stock
-              markets daily ticker. Get it?! Tell me you get it... Stylistically
-              ripped off from Robinhood.
-            </span>
-          </Item.Meta>
-          <Item.Extra>
-            <Label>React</Label>
-            <Label>JavaScript</Label>
-
-            <Label> Data </Label>
-            <Label> API </Label>
-          </Item.Extra>
-          <Button
-            component={Blog}
-            href="https://tickertok.vercel.app/"
-            target="_blank"
-            color="teal"
-            floated="left"
-          >
-            View Project
-            <Icon name="right chevron" />
-          </Button>
-        </Item.Content>
-      </Item>
     </Item.Group>
   );
 };
