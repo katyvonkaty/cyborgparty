@@ -11,6 +11,8 @@ import honey from "../images/honey.png";
 import physical from "../images/physical.jpg";
 import vol from "../images/vol.jpg";
 import meta7 from "../images/meta.jpg";
+import one from "../images/1four.jpg";
+
 
 
 
@@ -29,7 +31,7 @@ const Options = (props) => {
 
       <Item>
         <Item.Image
-          src={meta7}
+          src={one}
           rounded
         />
         <Item.Content>
