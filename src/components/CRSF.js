@@ -29,48 +29,47 @@ function CRSF() {
 
         <MeatPotatoes
           number="1"
-          solutionStep="Define the Vulnerability"
-          solutionImage={one}
-
-          moreInfo="Attacker will prompt user to devulge their private information via hidden malicious link. Allowing the attacked to work around the same origin policy, which is designed to prevent different websites from interfering with each other."
-        />
-
-<MeatPotatoes summary
-          number="2"
           solutionStep="How Does CSRF work?"
           solutionImage={two}
 
-          moreInfo="A relevant action, cookie based session handling, no unpredictable request parameters."
+          moreInfo="Attacker will prompt user to devulge their private information via hidden malicious link. Allowing the attacked to work around the same origin policy, which is designed to prevent different websites from interfering with each other. A relevant action, cookie based session handling, no unpredictable request parameters"
         />
 
-<Summary summary = "An HTTP request to change user's email made by the user provides an attack vector that is interesting to the attacker, application uses a session cookie to identify the user, the parameters in the request are easily identified."
-        />
+
 
 <MeatPotatoes summary
           number="3"
           solutionStep="How to Deliver a CSRF exploit?"
           solutionImage={three}
 
-          moreInfo="The attacker will plant the malicious link in a website that they run. They may phish a user over email or social media to click a link supplied by the attacker."
+          moreInfo="The change email payload shows us what we already knew... email is what we are after. By targeting that value we can change the email to whatever we prefer, most likely our own hacky email."
+        />
+        <Summary summary = "An HTTP request to change user's email made by the user provides an attack vector that is interesting to the attacker, application uses a session cookie to identify the user, the parameters in the request are easily identified."
         />
 
 <MeatPotatoes summary
           number="4"
-          solutionStep="How to Deliver a CSRF exploit?"
+          solutionStep="Form Request"
           solutionImage={four}
 
-          moreInfo="The attacker will plant the malicious link in a website that they run. They may phish a user over email or social media to click a link supplied by the attacker."
+          moreInfo="You could use burpsuite professional to craft an exploit, or you can edit the HTML directly. We target the change email form as where we want to put our malicious link."
         />
 
 <MeatPotatoes summary
           number="4"
-          solutionStep="How to Deliver a CSRF exploit?"
+          solutionStep="Lights, Camera, Exploitation"
           solutionImage={five}
 
-          moreInfo="The attacker will plant the malicious link in a website that they run. They may phish a user over email or social media to click a link supplied by the attacker."
-          solutionImage={six}
+          moreInfo="The action and value parameters are the ones to pay attention to in this image. Action is pointing us to the website that looks, talks and acts like a website we know but it is malicious. The value is hardcoded in so that it reflects our own email. Lastly, the script creates an instanteous submit which eliminates the user having to do anything else, we now have a foothold."
+          
         />
-       
+  <MeatPotatoes summary
+            number="5"
+            solutionStep="Proof"
+
+
+  solutionImage={six}
+  />
       
       </Grid.Column>
     </Grid>

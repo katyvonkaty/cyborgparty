@@ -45,7 +45,6 @@ const Options = (props) => {
             <Label>Web Security</Label>
             <Label>Vunerable</Label>
             <Label>HTML</Label>
-            <Label content="Docker" />
 
           </Item.Extra>
           <Button
