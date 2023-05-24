@@ -57,7 +57,6 @@ function App() {
 
               </Routes>
               <Options />
-              <Footer />
 
             </Grid.Column>
           </Grid>
