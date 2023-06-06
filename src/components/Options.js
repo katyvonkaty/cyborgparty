@@ -6,6 +6,8 @@ import Network from "./Network"
 import Volatility from "./Volatility"
 import Metasploit from "./Metasploit"
 import CRSF from "./CRSF"
+import SQL from "./SQL"
+
 
 import honey from "../images/honey.png";
 import physical from "../images/physical.jpg";
@@ -28,6 +30,39 @@ const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
       <h3> Rabbit Holes to Dive Into: </h3>
+
+      <Item>
+        <Item.Image
+          src={one}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">SQL Injection</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+
+              testing
+ok            </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Web Security</Label>
+            <Label>Vunerable</Label>
+            <Label>HTML</Label>
+
+          </Item.Extra>
+          <Button
+            component={vol}
+            href="/SQL"
+            to="/SQL"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
+
 
       <Item>
         <Item.Image
