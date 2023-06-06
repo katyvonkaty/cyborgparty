@@ -19,6 +19,8 @@ import one from "../images/1four.jpg";
 
 
 import wifi from "../images/wifi.gif";
+import SQL from "../images/SQL.png";
+
 import generation from "../images/generation.png";
 
 
@@ -33,7 +35,7 @@ const Options = (props) => {
 
       <Item>
         <Item.Image
-          src={one}
+          src={SQL}
           rounded
         />
         <Item.Content>
