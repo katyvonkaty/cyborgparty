@@ -41,8 +41,8 @@ const Options = (props) => {
           <Item.Meta>
             <span className="cinema">
 
-              testing
-ok            </span>
+            SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
+           </span>
           </Item.Meta>
           <Item.Extra>
             <Label>Web Security</Label>
@@ -64,16 +64,17 @@ ok            </span>
       </Item>
 
 
+      
       <Item>
         <Item.Image
           src={one}
           rounded
         />
         <Item.Content>
-          <Item.Header as="a">CSRF 3 Ways</Item.Header>
+          <Item.Header as="a">Cross Site Request Forgery</Item.Header>
           <Item.Meta>
             <span className="cinema">
-            Cross Site Request Forgery can be executed a number of ways but most browsers are equipped to stop the attack way before it starts. Here I'm exploring potenial ways a bad actor could use CRSF via token validation, samesite cookie restrictions and referer-based CSRF defenses.
+            CSRF can be executed a number of ways but most browsers are equipped to stop the attack way before it starts. Here I'm exploring potenial ways a bad actor could use CRSF via token validation, samesite cookie restrictions and referer-based CSRF defenses.
             </span>
           </Item.Meta>
           <Item.Extra>
