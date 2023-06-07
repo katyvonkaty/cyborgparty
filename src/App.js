@@ -21,6 +21,8 @@ import Volatility from "./components/Volatility";
 import Metasploit from "./components/Metasploit";
 import CRSF from "./components/CRSF";
 import SQL from "./components/SQL";
+import Click from "./components/Click";
+
 
 
 import Footer from "./components/Footer";
@@ -53,6 +55,8 @@ function App() {
                 <Route  path="/Metasploit" element={<Metasploit />} />
                 <Route  path="/CRSF" element={<CRSF />} />
                 <Route  path="/SQL" element={<SQL />} />
+                <Route  path="/Click" element={<Click />} />
+
 
 
 

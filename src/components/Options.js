@@ -7,6 +7,8 @@ import Volatility from "./Volatility"
 import Metasploit from "./Metasploit"
 import CRSF from "./CRSF"
 import SQL from "./SQL"
+import Click from "./Click"
+
 
 
 import honey from "../images/honey.png";
@@ -35,7 +37,40 @@ const Options = (props) => {
 
       <Item>
         <Item.Image
-          src={SQL1}
+          src={"https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png"}
+          rounded
+        />
+        <Item.Content>
+          <Item.Header as="a">Clickjacking</Item.Header>
+          <Item.Meta>
+            <span className="cinema">
+
+            SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database.
+           </span>
+          </Item.Meta>
+          <Item.Extra>
+            <Label>Web Security</Label>
+            <Label>Vunerable</Label>
+            <Label>HTML</Label>
+
+          </Item.Extra>
+          <Button
+            component={vol}
+            href="/Click"
+            to="/Click"
+            color="grey"
+            floated="left"
+          >
+            View Project
+            <Icon name="right chevron" />
+          </Button>
+        </Item.Content>
+      </Item>
+
+
+      <Item>
+        <Item.Image
+          src={"https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/SQL%20injection/What%20is%20a%20SQL%20injection.png?width=660&name=What%20is%20a%20SQL%20injection.png"}
           rounded
         />
         <Item.Content>
@@ -69,7 +104,7 @@ const Options = (props) => {
       
       <Item>
         <Item.Image
-          src={one}
+          src={"https://assets.website-files.com/5ff66329429d880392f6cba2/61f251b52a583fa4149b98c0_CSRF%20Preview.jpg"}
           rounded
         />
         <Item.Content>
