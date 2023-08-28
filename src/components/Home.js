@@ -5,10 +5,10 @@ import React from "react";
 const Home = () => {
   return (
 <>
-          <h1> Hi, I'm Katie 👋 </h1>
+          <h1> 👋 I'm Katie </h1>
           <h3 style={{fontWeight:"300"}}>
             {" "}
-            Interests include music, traveling, hiking, bike rides, my dog, computers and all types of sugar. 
+            Interests include food, traveling, outdoors, more food, my dog and computers. 
 
           </h3>
 

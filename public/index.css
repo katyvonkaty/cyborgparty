@@ -150,3 +150,31 @@ h2 {
   text-align:center !important;
 
 }
+
+
+.ui.divided.items .item {
+  padding-top:30px !important;
+  padding-bottom:30px !important;
+}
+
+.ui.menu {
+  box-shadow:none !important;
+}
+
+.ui.fluid.four.item.menu img {
+  box-shadow: none !important;
+}
+
+.ui.centered.grid h1 {
+  color:#FF6347;
+}
+
+.ui.label {
+  background-color: #FFA500 !important;
+}
+
+.ui.grey.circular.label, .ui.grey.label {
+background-color: #FFA500 !important;
+}
+
+
