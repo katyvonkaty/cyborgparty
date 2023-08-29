@@ -10,7 +10,6 @@ import SQL from "./SQL"
 import Click from "./Click"
 
 
-
 import honey from "../images/honey.png";
 import physical from "../images/physical.jpg";
 import vol from "../images/vol.jpg";
@@ -28,12 +27,13 @@ import generation from "../images/generation.png";
 
 import Blog from "./Blog";
 
-import { Button, Icon, Item, Label } from "semantic-ui-react";
+import { Button, Icon, Item, Label, Grid } from "semantic-ui-react";
 
 const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
-      <h3> Rabbit Holes to Dive Into: </h3>
+      <h3> Fun Finds: </h3>
+    <Grid item xs={8}>
 
       <Item>
         <Item.Image
@@ -66,6 +66,8 @@ const Options = (props) => {
           </Button>
         </Item.Content>
       </Item>
+      </Grid>
+
 
 
       <Item>
