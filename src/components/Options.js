@@ -32,10 +32,9 @@ import { Button, Icon, Item, Label, Grid } from "semantic-ui-react";
 const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
-      <h3> Fun Finds: </h3>
-    <Grid item xs={8}>
+      <h3> Fun : </h3>
 
-      <Item>
+      <Item spacing={5}>
         <Item.Image
           src={"https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png"}
           rounded
@@ -66,7 +65,6 @@ const Options = (props) => {
           </Button>
         </Item.Content>
       </Item>
-      </Grid>
 
 
 

@@ -22,6 +22,7 @@ import Metasploit from "./components/Metasploit";
 import CRSF from "./components/CRSF";
 import SQL from "./components/SQL";
 import Click from "./components/Click";
+import NewList from "./components/NewList";
 
 
 
