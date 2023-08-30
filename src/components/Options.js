@@ -8,6 +8,7 @@ import Metasploit from "./Metasploit"
 import CRSF from "./CRSF"
 import SQL from "./SQL"
 import Click from "./Click"
+import NewList from "./NewList"
 
 
 
@@ -28,14 +29,15 @@ import generation from "../images/generation.png";
 
 import Blog from "./Blog";
 
-import { Button, Icon, Item, Label } from "semantic-ui-react";
+import { Button, Icon, Item, Label, Grid } from "semantic-ui-react";
 
 const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
-      <h3> Rabbit Holes to Dive Into: </h3>
+      <h3> Deep dives : </h3>
+      {/* <NewList /> */}
 
-      <Item>
+      <Item spacing={5}>
         <Item.Image
           src={"https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png"}
           rounded
@@ -66,6 +68,7 @@ const Options = (props) => {
           </Button>
         </Item.Content>
       </Item>
+
 
 
       <Item>
