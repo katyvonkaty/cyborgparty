@@ -57,6 +57,7 @@ function App() {
                 <Route  path="/CRSF" element={<CRSF />} />
                 <Route  path="/SQL" element={<SQL />} />
                 <Route  path="/Click" element={<Click />} />
+                <Route  path="/NewList" element={<NewList />} />
 
 
 

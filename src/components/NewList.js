@@ -1,7 +1,11 @@
 import * as React from 'react';
 
 // import { styled } from '@mui/material/styles';
-import { Paper, Stack, Box, Item } from "semantic-ui-react";
+import { Paper, Item } from "semantic-ui-react";
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+
+
 
 
 // const Item = styled(Paper)(({ theme }) => ({

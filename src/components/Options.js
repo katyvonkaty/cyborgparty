@@ -8,6 +8,8 @@ import Metasploit from "./Metasploit"
 import CRSF from "./CRSF"
 import SQL from "./SQL"
 import Click from "./Click"
+import NewList from "./NewList"
+
 
 
 import honey from "../images/honey.png";
@@ -32,7 +34,8 @@ import { Button, Icon, Item, Label, Grid } from "semantic-ui-react";
 const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
-      <h3> Fun : </h3>
+      <h3> Deep dives : </h3>
+      {/* <NewList /> */}
 
       <Item spacing={5}>
         <Item.Image
