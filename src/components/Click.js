@@ -3,8 +3,6 @@ import Tag from "../components/Tag";
 import MeatPotatoes from "../components/MeatPotatoes";
 import Summary from "../components/Summary";
 import Info from "../components/Info";
-
-
 import one from "../images/one.jpg";
 import two from "../images/two.jpg";
 import three from "../images/three.jpg";
@@ -13,10 +11,6 @@ import click from "../images/click.png";
 import code from "../images/code.png";
 import emails from "../images/emails.png";
 import network from "../images/network.png";
-
-
-
-
 
 
 

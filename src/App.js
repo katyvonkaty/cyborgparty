@@ -23,6 +23,7 @@ import CRSF from "./components/CRSF";
 import SQL from "./components/SQL";
 import Click from "./components/Click";
 import NewList from "./components/NewList";
+import Burp from "./components/Burpsuite";
 
 
 
@@ -41,7 +42,7 @@ function App() {
         <MenuDefault />
         <Container centered style={{ marginTop: "50px" }}>
           <Grid centered>
-            <Grid.Column centered width={10}>
+            <Grid.Column centered width={14}>
               <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route  path="/log4j" element={<Log4J />} />
@@ -58,6 +59,8 @@ function App() {
                 <Route  path="/SQL" element={<SQL />} />
                 <Route  path="/Click" element={<Click />} />
                 <Route  path="/NewList" element={<NewList />} />
+                <Route  path="/Burp" element={<Burp />} />
+
 
 
 
