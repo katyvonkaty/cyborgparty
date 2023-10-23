@@ -32,28 +32,24 @@ const Options = (props) => {
   return (
     <Item.Group divided style={{ marginTop: "80px" }}>
 
-      <Grid>
+      <Grid >
         <Grid.Row>
-          <Grid.Column width={8}>
+          <Grid.Column computer={4} tablet={8} mobile={16}>
             <Item>
               <h3>Burpsuite</h3>
               <Item.Meta>
                   <span className="cinema">
-                    SQL injection (SQLi) is a web security vulnerability that
-                    allows an attacker to interfere with the queries that an
-                    application makes to its database.
+                  Burp Suite is a software security application used for penetration testing of web applications. Both a free and a paid version of the software are available. The software is developed by the company PortSwigger
                   </span>
                 </Item.Meta>
               <Item.Image
                 src={
-                  "https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png"
+                  "https://securityqueens.co.uk/wp-content/uploads/2020/06/burpsuite.png"
                 }
                 rounded
               />
               <Item.Content>
-                <Item.Meta>
-                  <span className="cinema">Burp </span>
-                </Item.Meta>
+           
                 <Item.Extra>
                   <Label>Web Security</Label>
                   <Label>Vunerable</Label>
@@ -72,7 +68,7 @@ const Options = (props) => {
               </Item.Content>
             </Item>{" "}
           </Grid.Column>
-          <Grid.Column width={8}>
+          <Grid.Column computer={4} tablet={8} mobile={16}>
             <Item spacing={5}>
               <h3>Clickjacking</h3>
               <Item.Meta>
@@ -112,7 +108,7 @@ const Options = (props) => {
         </Grid.Row>
 
         <Grid.Row>
-          <Grid.Column width={8}>
+        <Grid.Column computer={8} mobile={16}>
             <Item>
             <h3>SQL Injection</h3>
                 <Item.Meta>
@@ -148,7 +144,7 @@ const Options = (props) => {
               </Item.Content>
             </Item>{" "}
           </Grid.Column>
-          <Grid.Column width={8}>
+          <Grid.Column computer={8} mobile={16}>
             <Item>
             <h3>Cross Site Request Forgery</h3>
                 <Item.Meta>
@@ -189,7 +185,7 @@ const Options = (props) => {
         </Grid.Row>
       </Grid>
 
-      <Item>
+      {/* <Item>
         <Item.Image src={meta7} rounded />
         <Item.Content>
           <Item.Header as="a">Metasploit</Item.Header>
@@ -216,9 +212,9 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
+      </Item> */}
 
-      <Item>
+      {/* <Item>
         <Item.Image src={vol} rounded />
         <Item.Content>
           <Item.Header as="a">Memory Forensics</Item.Header>
@@ -245,8 +241,8 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
-
+      </Item> */}
+{/* 
       <Item>
         <Item.Image src={generation} rounded />
         <Item.Content>
@@ -277,9 +273,9 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
+      </Item> */}
 
-      <Item>
+      {/* <Item>
         <Item.Image src={physical} rounded />
         <Item.Content>
           <Item.Header as="a">Networking in Virtual Box</Item.Header>
@@ -304,9 +300,9 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
+      </Item> */}
 
-      <Item>
+      {/* <Item>
         <Item.Image src={wifi} rounded />
         <Item.Content>
           <Item.Header as="a">Aircrack NG</Item.Header>
@@ -335,9 +331,9 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
+      </Item> */}
 
-      <Item>
+      {/* <Item>
         <Item.Image src={honey} rounded />
         <Item.Content>
           <Item.Header as="a">Le Honey Pot </Item.Header>
@@ -366,8 +362,8 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
-
+      </Item> */}
+{/* 
       <Item>
         <Item.Image
           src="https://cyberport-katiejordan.vercel.app/static/media/portscan.82a51357d70e1f018581.png"
@@ -400,9 +396,9 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
+      </Item> */}
 
-      <Item>
+      {/* <Item>
         <Item.Image
           src="https://i0.wp.com/4.bp.blogspot.com/-clNpcTBtdIs/W9PszzUnxQI/AAAAAAAAa3Q/qtnsNsp9iu8tQqDdO48JNWxxKhCar6xlACLcBGAs/s1600/10.png?ssl=1"
           rounded
@@ -434,7 +430,7 @@ const Options = (props) => {
             <Icon name="right chevron" />
           </Button>
         </Item.Content>
-      </Item>
+      </Item> */}
     </Item.Group>
   );
 };
