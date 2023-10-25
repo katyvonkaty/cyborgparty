@@ -10,7 +10,7 @@ function Burp() {
   <Container class="testing" centered style={{ marginTop: "20px" }}>
     <Grid centered>
       <Grid.Column centered>
-      <Tag CVEscore="Burpppp" label="Hot and New" />
+         <Tag CVEscore="Burpppp" label="Hot and New" />
       <Opener opener="Burpsuite"  />
         <Summary summary="Burpsuite is application testing software, its essential is any web penetration test.
             But what is it???
