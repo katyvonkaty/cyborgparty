@@ -42,18 +42,16 @@ const Options = (props) => {
           </Card.Meta>
           <Card.Description>
             <span className="cinema">
-              Burp Suite is a software security application used for penetration
-              testing of web applications. Both a free and a paid version of the
-              software are available. The software is developed by the company
-              PortSwigger
+             
+Burp Suite stands as a software security application employed for conducting penetration tests on web applications. This versatile software is offered in both free and paid versions and is crafted by the company PortSwigger. The suite encompasses a range of tools, including a proxy server (Burp Proxy), an indexing robot (Burp Spider), an intrusion tool (Burp Intruder), a vulnerability scanner (Burp Scanner), and an HTTP repeater (Burp Repeater).
             </span>{" "}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
           <Item.Extra>
-            <Label>Web Security</Label>
-            <Label>Vunerable</Label>
-            <Label>HTML</Label>
+            <Label>Proxy Servers</Label>
+            <Label>Web Application</Label>
+            <Label>Penetration Testing</Label>
           </Item.Extra>
           <Button
             component={vol}
@@ -81,18 +79,16 @@ const Options = (props) => {
           </Card.Meta>
           <Card.Description>
             <span className="cinema">
-              SQL injection (SQLi) is a web security vulnerability that allows
-              an attacker to interfere with the queries that an application
-              makes to its database.
+            Clickjacking is a deceptive method designed to manipulate a user into clicking on an element that differs from their perception, potentially leading to the disclosure of confidential information or granting unauthorized access to their computer. This can occur when interacting with apparently harmless elements, such as web pages.
             </span>{" "}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
           <Item.Content>
             <Item.Extra>
-              <Label>Web Security</Label>
-              <Label>Vunerable</Label>
-              <Label>HTML</Label>
+              <Label>Interface Attack</Label>
+              <Label> Bait & Switch </Label>
+              <Label>Web Application</Label>
             </Item.Extra>
             <Button
               component={vol}
@@ -122,18 +118,16 @@ const Options = (props) => {
           </Card.Meta>
           <Card.Description>
             <span className="cinema">
-              SQL injection (SQLi) is a web security vulnerability that allows
-              an attacker to interfere with the queries that an application
-              makes to its database.
+            SQL injection, commonly referred to as SQLI, is a prevalent method of attack in which malevolent SQL code is employed to manipulate the backend database, enabling unauthorized access to information that was not originally meant to be revealed. Such information could encompass various data, such as sensitive corporate records, user directories, or confidential customer information.
             </span>{" "}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
         <Item.Content>
       <Item.Extra>
-        <Label>Web Security</Label>
-        <Label>Vunerable</Label>
-        <Label>HTML</Label>
+      <Label>Relational Database</Label>
+              <Label>Storing Data</Label>
+              <Label>Processing Data</Label>
       </Item.Extra>
       <Button
         component={vol}
