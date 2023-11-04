@@ -12,6 +12,8 @@ import ContainerFluid from "./components/ContainerFluid";
 import HoneyPot from "./components/HoneyPot";
 import Log4J from "./components/Log4J";
 import Home from "./components/Home";
+import Me from "./components/Me";
+
 import Evernote from "./components/Evernote";
 import SearchSploit from "./components/SearchSploit";
 import Blog from "./components/Blog";
@@ -43,6 +45,7 @@ function App() {
       <Router>
         <MenuDefault />
         <Container fluid centered style={{ marginTop: "50px" }}>
+          <Me />
           <Grid centered>
             <Grid.Column>
               <Routes>
@@ -62,6 +65,7 @@ function App() {
                 <Route  path="/Metasploit" element={<Metasploit />} />
                 <Route  path="/CRSF" element={<CRSF />} />
                 <Route  path="/SQL" element={<SQL />} />
+
                 <Route  path="/Click" element={<Click />} />
                 <Route  path="/NewList" element={<NewList />} />
                 <Route  path="/Burp" element={<Burp />} />
