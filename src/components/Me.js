@@ -15,7 +15,7 @@ const Me = () => (
             challenging puzzles, as well as solving the simpler ones. Sundays
             are another favorite of mine.{" "}
           </p>
-          <h5> <i> This is a compilation of my interests and preferences. </i></h5>
+          <p> <i> This is a compilation of my interests and preferences 🚀 </i></p>
       </Grid.Column>
     </Grid.Row>
   </Grid>
