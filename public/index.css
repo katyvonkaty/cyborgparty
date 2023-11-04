@@ -19,6 +19,15 @@ body {
   color: white !important;
 }
 
+h2 {
+  text-align: left !important;
+  font-size: 50px !important;
+  font-family: Playfair Display !important;
+  color: #171713 !important;
+}
+
+
+
 
 
 code {
@@ -139,10 +148,7 @@ h4 {
   position: relative !important;
 }
 
-h2 {
-  text-align:center !important;
-  color: #948989 !important;
-}
+
 
 .draggable-list li.right .person-name {
   color: #2a2a2a;

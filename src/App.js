@@ -7,6 +7,8 @@ import {
 } from "semantic-ui-react";
 
 import MenuDefault from "./components/Menu";
+import ContainerFluid from "./components/ContainerFluid";
+
 import HoneyPot from "./components/HoneyPot";
 import Log4J from "./components/Log4J";
 import Home from "./components/Home";
@@ -40,12 +42,14 @@ function App() {
     <div className="App">
       <Router>
         <MenuDefault />
-        <Container centered style={{ marginTop: "50px" }}>
+        <Container fluid centered style={{ marginTop: "50px" }}>
           <Grid centered>
-            <Grid.Column centered width={14}>
+            <Grid.Column>
               <Routes>
                 <Route exact path="/" element={<Home />} />
-              
+                <Route path="/ContainerFluid" element= {<ContainerFluid/>} />
+
+
                 <Route  path="/log4j" element={<Log4J />} />
                 <Route  path="/evernote" element={<Evernote />} />
                 <Route  path="/SearchSploit" element={<SearchSploit />} />
