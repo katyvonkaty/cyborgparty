@@ -23,7 +23,8 @@ const ContainerExampleFluid = () => (
     <Container fluid style={{ backgroundColor: "#ffe4e4", padding: "50px" }}>
       <Segment placeholder>
         <Grid columns={2} stackable>
-          <Grid.Column style={{ padding: "50px" }}>
+
+          <Grid.Column mobile={16} tablet={16} computer={8} style={{ padding: "50px" }}>
             <Item.Group>
               <Item>
                 <Item.Content>
@@ -40,7 +41,7 @@ const ContainerExampleFluid = () => (
             </Item.Group>
             <Card.Description>
               <Item.Extra>
-                <b>Additional Details</b>
+                <b>Under The Hood:</b>
               </Item.Extra>
               <hr />
               <span className="cinema">
@@ -64,7 +65,7 @@ const ContainerExampleFluid = () => (
               </Button> 
           </Grid.Column>
 
-          <Grid.Column
+          <Grid.Column mobile={0} tablet={0} computer={8}
             style={{
               backgroundImage:
                 "url(https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png)",

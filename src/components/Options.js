@@ -33,8 +33,9 @@ const Options = (props) => {
       <ContainerFluid />
       <Container>
         <Grid columns="equal">
+          <h4 style={{marginTop:"40px"}}> Thoughts & Experiments<hr></hr> </h4>
           <Grid ui centered grid style={{ textAlign: "left", padding: "30px" }}>
-            <Grid.Column width={5}>
+            <Grid.Column mobile={16} tablet={8} computer={5}>
               <Image src="https://assets.website-files.com/5ff66329429d880392f6cba2/61f251b52a583fa4149b98c0_CSRF%20Preview.jpg" />
 
               <h3>Cross Site Request Forgery</h3>
@@ -51,8 +52,8 @@ const Options = (props) => {
               </p>
               <Button
                 component={vol}
-                href="/Click"
-                to="/Click"
+                href="/CRSF"
+                to="/CRSF"
                 color="grey"
                 floated="left"
               >
@@ -60,7 +61,7 @@ const Options = (props) => {
                 Read More{" "}
               </Button>
             </Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column mobile={16} tablet={8} computer={5}>
               <Image src="https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/SQL%20injection/What%20is%20a%20SQL%20injection.png?width=660&name=What%20is%20a%20SQL%20injection.png" />
               <h3> SQL Injection</h3>
               <Item.Extra style={{ marginBottom: "20px" }}>
@@ -76,8 +77,8 @@ const Options = (props) => {
 
               <Button
                 component={vol}
-                href="/CRSF"
-                to="/CRSF"
+                href="/SQL"
+                to="/SQL"
                 color="grey"
                 floated="left"
               >
@@ -85,7 +86,7 @@ const Options = (props) => {
                 Read More{" "}
               </Button>
             </Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column mobile={16} tablet={8} computer={5}>
               <Image src="https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png" />
 
               <h3> Clickjacking</h3>
@@ -100,7 +101,13 @@ const Options = (props) => {
                 potentially...
               </p>
 
-              <Button> Read More </Button>
+              <Button
+                component={vol}
+                href="/Click"
+                to="/Click"
+                color="grey"
+                floated="left"
+              > Read More </Button>
             </Grid.Column>
             </Grid>
         </Grid>
