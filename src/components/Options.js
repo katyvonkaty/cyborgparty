@@ -35,7 +35,7 @@ const Options = (props) => {
       <ContainerFluid />
       <Container>
         <Grid columns="equal">
-          <h4 style={{marginTop:"40px"}}> Thoughts & Experiments<hr></hr> </h4>
+          <h4 style={{ marginTop: "40px" }}> Thoughts & Experiments<hr></hr> </h4>
           <Grid ui centered grid style={{ textAlign: "left", padding: "30px" }}>
             <Grid.Column mobile={16} tablet={8} computer={5}>
               <Image src="https://assets.website-files.com/5ff66329429d880392f6cba2/61f251b52a583fa4149b98c0_CSRF%20Preview.jpg" />
@@ -111,7 +111,7 @@ const Options = (props) => {
                 floated="left"
               > Read More </Button>
             </Grid.Column>
-            </Grid>
+          </Grid>
         </Grid>
       </Container>
     </>

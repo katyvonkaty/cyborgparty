@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import {
@@ -40,40 +40,40 @@ import Footer from "./components/Footer";
 
 
 function App() {
+
+
   return (
-    <div className="App">
-      <Router>
+    <>
+      <div className="App">
         <MenuDefault />
         <Container fluid centered style={{ marginTop: "50px" }}>
           <Me />
           <Grid centered>
             <Grid.Column>
               <Routes>
+
+            
+
                 <Route exact path="/" element={<Home />} />
-                <Route path="/ContainerFluid" element= {<ContainerFluid/>} />
+                <Route path="/ContainerFluid" element={<ContainerFluid />} />
 
 
-                <Route  path="/log4j" element={<Log4J />} />
-                <Route  path="/evernote" element={<Evernote />} />
-                <Route  path="/SearchSploit" element={<SearchSploit />} />
-                <Route  path="/HoneyPot" element={<HoneyPot />} />
-                <Route  path="/blog" element={<Blog />} />
-                <Route  path="/Wifi" element={<Wifi />} />
-                <Route  path="/Infiltrate" element={<Infiltrate />} />
-                <Route  path="/Network" element={<Network />} />
-                <Route  path="/Volatility" element={<Volatility />} />
-                <Route  path="/Metasploit" element={<Metasploit />} />
-                <Route  path="/CRSF" element={<CRSF />} />
-                <Route  path="/SQL" element={<SQL />} />
+                <Route path="/log4j" element={<Log4J />} />
+                <Route path="/evernote" element={<Evernote />} />
+                <Route path="/SearchSploit" element={<SearchSploit />} />
+                <Route path="/HoneyPot" element={<HoneyPot />} />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/Wifi" element={<Wifi />} />
+                <Route path="/Infiltrate" element={<Infiltrate />} />
+                <Route path="/Network" element={<Network />} />
+                <Route path="/Volatility" element={<Volatility />} />
+                <Route path="/Metasploit" element={<Metasploit />} />
+                <Route path="/CRSF" element={<CRSF />} />
+                <Route path="/SQL" element={<SQL />} />
 
-                <Route  path="/Click" element={<Click />} />
-                <Route  path="/NewList" element={<NewList />} />
-                <Route  path="/Burp" element={<Burp />} />
-
-
-
-
-
+                <Route path="/Click" element={<Click />} />
+                <Route path="/NewList" element={<NewList />} />
+                <Route path="/Burp" element={<Burp />} />
 
 
               </Routes>
@@ -82,8 +82,8 @@ function App() {
             </Grid.Column>
           </Grid>
         </Container>
-      </Router>
-    </div>
+      </div>
+      </>
   );
 }
 

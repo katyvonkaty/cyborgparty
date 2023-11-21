@@ -62,9 +62,9 @@ hr {
   border: 0.2px dotted #eee !important;
 }
 
-a {
+/* a {
   color: white !important;
-}
+} */
 
 a.ui.teal.label, .ui.teal.labels .label {
   background-color: #666 !important;
@@ -95,9 +95,9 @@ img {
 }
 
 
-button a {
+/* button a {
   color:white !important;
-}
+} */
 
 .ui.list .list>.item>i.icon, .ui.list>.item>i.icon {
   color:#666!important;
@@ -114,6 +114,14 @@ button a {
   margin-top:15px;
   color:#666 !important;
 
+}
+
+i.circular.icon {
+  margin-top:10px !important;
+}
+
+.ui.menu .item>.input input, .ui.menu {
+  border: none !important;
 }
 
 
