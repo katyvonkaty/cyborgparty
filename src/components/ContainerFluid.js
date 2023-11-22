@@ -20,64 +20,33 @@ import Burp from "../components/Burpsuite";
 
 const ContainerExampleFluid = () => (
   <div>
-    <Container fluid style={{ backgroundColor: "#ffe4e4", padding: "50px" }}>
-      <Segment placeholder>
-        <Grid columns={2} stackable>
+    <Container fluid style={{ padding: "50px" }}>
+      <h3> Restructuring ... Come Back Soon</h3>
+      {/* <Segment placeholder>
+        <Grid columns={2} stackable style={{ padding: "50px" }}>
 
-          <Grid.Column mobile={16} tablet={16} computer={8} style={{ padding: "50px" }}>
-            <Item.Group>
-              <Item>
-                <Item.Content>
-                  <Item.Meta>Let's Talk About</Item.Meta>
+            <Item.Group divided>
+            <Item>
+              <Item.Image src="https://i0.wp.com/allabouttesting.org/wp-content/uploads/2021/03/burpsuite-tool.jpg?resize=1024%2C379" />
 
-                  <h2> Burpsuite</h2>
-                  <Item.Extra style={{ marginBottom: "20px" }}>
-                  <Label>Proxy Servers</Label>
-                  <Label>Web Application</Label>
-                  <Label>Penetration Testing</Label>
-                  </Item.Extra>
-                </Item.Content>
-              </Item>
-            </Item.Group>
-            <Card.Description>
-              <Item.Extra>
-                <b>Under The Hood:</b>
-              </Item.Extra>
-              <hr />
-              <span className="cinema">
-                Burp Suite stands as a software security application employed
-                for conducting penetration tests on web applications. This
-                versatile software is offered in both free and paid versions and
-                is crafted by the company PortSwigger. The suite encompasses a
-                range of tools...
-              </span>{" "}
-            </Card.Description>
-            <Button
-                component={Burp}
-                href="/Burp"
-                to="/Burp"
-                color="grey"
-                floated="left"
-                style={{ marginTop: "20px;" }}
-              >
-                {" "}
-                Read More{" "}
-              </Button> 
-          </Grid.Column>
-
-          <Grid.Column mobile={0} tablet={0} computer={8}
-            style={{
-              backgroundImage:
-                "url(https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png)",
-              backgroundSize: "cover",
-            }}
-          >
-            {/* <Image src="https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png"/> */}
-          </Grid.Column>
-        </Grid>
-      </Segment>
-    </Container>
-  </div>
+              <Item.Content>
+                <Item.Header as='a'>12 Years a Slave</Item.Header>
+                <Item.Meta>
+                  <span className='cinema'>Union Square 14</span>
+                </Item.Meta>
+                <Item.Description>h</Item.Description>
+                <Item.Extra>
+                  <Label>IMAX</Label>
+                  <Label icon='globe' content='Additional Languages' />
+                </Item.Extra>
+              </Item.Content>
+            </Item> 
+          </Item.Group>
+    
+      </Grid>
+    </Segment> */}
+  </Container>
+  </div >
 );
 
 export default ContainerExampleFluid;

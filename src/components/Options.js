@@ -33,25 +33,26 @@ const Options = (props) => {
   return (
     <>
       <ContainerFluid />
-      <Container>
-        <Grid columns="equal">
-          <h4 style={{ marginTop: "40px" }}> Thoughts & Experiments<hr></hr> </h4>
-          <Grid ui centered grid style={{ textAlign: "left", padding: "30px" }}>
-            <Grid.Column mobile={16} tablet={8} computer={5}>
-              <Image src="https://assets.website-files.com/5ff66329429d880392f6cba2/61f251b52a583fa4149b98c0_CSRF%20Preview.jpg" />
+      {/* <p> Under Construction: Coming Soon</p> */}
+      {/* <Container>
+        <Card.Group itemsPerRow={3}>
 
+          <Card >
+            <Image src="https://assets.website-files.com/5ff66329429d880392f6cba2/61f251b52a583fa4149b98c0_CSRF%20Preview.jpg" wrapped ui={false} />
+
+            <Card.Content>
               <h3>Cross Site Request Forgery</h3>
               <Item.Extra style={{ marginBottom: "20px" }}>
                 <Label>Interface Attack</Label>
                 <Label> Bait & Switch </Label>
                 <Label>Web Application</Label>
               </Item.Extra>
-              <p>
-                {" "}
+              <Card.Description>
                 CSRF can be executed a number of ways but most browsers are
                 equipped to stop the attack way before it starts. Here I'm
-                exploring potenial...
-              </p>
+                exploring potenial...              </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
               <Button
                 component={vol}
                 href="/CRSF"
@@ -61,23 +62,25 @@ const Options = (props) => {
               >
                 {" "}
                 Read More{" "}
-              </Button>
-            </Grid.Column>
-            <Grid.Column mobile={16} tablet={8} computer={5}>
-              <Image src="https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/SQL%20injection/What%20is%20a%20SQL%20injection.png?width=660&name=What%20is%20a%20SQL%20injection.png" />
-              <h3> SQL Injection</h3>
+              </Button>            
+              </Card.Content>
+          </Card>
+
+          <Card >
+          <Image src="https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/SQL%20injection/What%20is%20a%20SQL%20injection.png?width=660&name=What%20is%20a%20SQL%20injection.png" />
+            <Card.Content>
+            <h3> SQL Injection</h3>
               <Item.Extra style={{ marginBottom: "20px" }}>
-                <Label>Relational Data</Label>
+              <Label>Relational Data</Label>
                 <Label>Processing Data</Label>
               </Item.Extra>
-              <p>
-                {" "}
-                SQL injection, commonly referred to as SQLI, is a prevalent
+              <Card.Description>
+              SQL injection, commonly referred to as SQLI, is a prevalent
                 method of attack in which malevolent SQL code is employed to
-                manipulate the backend database, enabling unauthorized...
-              </p>
-
-              <Button
+                manipulate the backend database, enabling unauthorized...          </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+            <Button
                 component={vol}
                 href="/SQL"
                 to="/SQL"
@@ -86,34 +89,16 @@ const Options = (props) => {
               >
                 {" "}
                 Read More{" "}
-              </Button>
-            </Grid.Column>
-            <Grid.Column mobile={16} tablet={8} computer={5}>
-              <Image src="https://cdn.invicti.com/statics/img/ogimage/clickjacking-attacks.png" />
+              </Button>        
+              </Card.Content>
+          </Card>
 
-              <h3> Clickjacking</h3>
-              <Item.Extra style={{ marginBottom: "20px" }}>
-                <Label>Interface Attack</Label>
-                <Label> Bait & Switch </Label>
-                <Label>Web Application</Label>
-              </Item.Extra>
-              <p>
-                Clickjacking is a deceptive method designed to manipulate a user
-                into clicking on an element that differs from their perception,
-                potentially...
-              </p>
 
-              <Button
-                component={vol}
-                href="/Click"
-                to="/Click"
-                color="grey"
-                floated="left"
-              > Read More </Button>
-            </Grid.Column>
-          </Grid>
-        </Grid>
-      </Container>
+
+        </Card.Group>
+
+
+      </Container> */}
     </>
   );
 };
